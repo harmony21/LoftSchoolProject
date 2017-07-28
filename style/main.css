@@ -25,9 +25,9 @@ body, html {
 /* Секция приветствия */
  .wrapper1 {
     background: url(..//img/video-bg.png); 
-    background-size: 100%;
-    height:100%;
-
+    background-size: 100%; 
+    height:100%; 
+    min-height: 650px;
 } 
 header {
     width: 968px;
@@ -69,13 +69,14 @@ li>a {
 .nav-item:last-child::after {
     content: "";
 }
-.btn {
+button {
     display: inline;
     background-color: e45028;
     padding:8px 14px 8px 14px;
     border-radius: 5px;
+    border: none;
 }
-.btn>a {
+button > a {
     color:#fff;
     font-family: Ubuntu-Medium;
     font-size: 13px;
@@ -126,7 +127,7 @@ li>a {
     display: inline-block;
     width: 480px;
 }
-.we-do>h1 {
+.we-do > h1 {
     font-family: Gagalin-Regular;
     color: #f9b43b;
     font-size: 72px;
@@ -134,13 +135,13 @@ li>a {
     margin-top:135px; 
     font-weight: lighter;
 }
-.natural-burg>h2 {
+h1 > span {
     font-family: Lifehack-Medium;
     color: #fff;
     font-size: 65px;
     font-weight: lighter;
-    margin-left: 15px;
-    margin-top:-25px;
+    display: block;
+    margin-top: 25px;
     line-height: 60px;
     letter-spacing: -2px;
 }
@@ -154,8 +155,8 @@ li>a {
 
 /* Секция "Мы лучшие" */
 .wrapper2 {
-    background: url(..//img/bg.png) no-repeat; 
-    background-size: 100% 100%;
+    background: url(..//img/bg.png) no-repeat;
+    background-size: 100% 100%; 
     width: 100%;    
     height:100%; 
     position: absolute; 
