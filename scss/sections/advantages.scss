@@ -1,0 +1,69 @@
+.advantages {
+    background: url(..//img/bg.png) no-repeat;
+    background-size: 100% 100%; 
+    width: 100%;    
+    height:100%; 
+    min-height: $min-height;
+}
+.adv-title {
+    width: 390px;
+    height: 90px; 
+    position: absolute;
+    margin-left:480px;
+    margin-top:60px; 
+}
+.adv-title__h1 {
+    font-family: Gagalin-Regular;
+    color: $dark-grey;
+    font-size: 72px;
+    font-weight: lighter;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.attribute {
+    width:970px;
+    position:absolute; 
+    margin-top: 210px;
+    margin-left: 195px;
+}
+
+.meat {
+    @include attribute_class_svg;
+    float:left;
+}
+.meat-name__title {
+    @include attribute_class_title;
+    margin-top:30px;
+}
+.meat-article {
+    @include attribute_class_article;
+}
+
+.hand-made {
+    @include attribute_class_svg;
+    float: left;
+}
+.hand-made-name__title {
+    @include attribute_class_title;
+    margin-top:35px;
+}
+.hand-made-article {
+    @include attribute_class_article;
+    margin-top: -5px;
+}
+
+.ingredients {
+    @include attribute_class_svg;
+    float:right;
+}
+.ingredients-name__title {
+    @include attribute_class_title;
+    margin-top:42px;
+    letter-spacing: 1px;
+}
+.ingredients-article {
+    @include attribute_class_article;
+    margin-top: -10px;
+}
