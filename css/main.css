@@ -48,6 +48,12 @@ body, html {
   list-style: none;
   display: inline;
   line-height: 72px; }
+  .nav__item:after {
+    content: "\2022";
+    color: #fff; }
+
+.nav__item:last-child::after {
+  content: ""; }
 
 .nav__link {
   text-decoration: none;
@@ -59,13 +65,6 @@ body, html {
   padding: 13px;
   display: inline-block;
   margin-top: -5px; }
-
-.nav__item::after {
-  content: "\2022";
-  color: #fff; }
-
-.nav__item:last-child::after {
-  content: ""; }
 
 .btn {
   display: inline;

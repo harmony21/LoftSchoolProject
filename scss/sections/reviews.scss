@@ -70,7 +70,7 @@
 }
 .btn-more {
     padding: 10px 10px;
-    background-color: #2f3234;
+    background-color: $dark-grey;
     width:90px;
     border-radius:6px;
     text-align:center;
@@ -78,7 +78,7 @@
 .btn-more__link {
     font-family: Ubuntu-Medium;
     text-decoration: none;
-    color: #fff;
+    color: $white;
     font-size: 13px;
     text-transform: uppercase;
 }
