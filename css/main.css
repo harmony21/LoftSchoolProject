@@ -22,32 +22,61 @@ body, html {
   width: 100%; }
 
 .main-screen {
-  background: url(..//img/video-bg.png);
-  background-size: 100%;
+  background: url(..//img/video-bg.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
   height: 100%;
-  min-height: 650px; }
+  min-height: 650px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: space-around;
+  -webkit-align-items: space-around;
+  -ms-flex-align: space-around;
+  align-items: space-around;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .header {
-  width: 968px;
-  height: 72px;
-  position: relative;
-  margin: auto; }
+  width: 100%;
+  height: 90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .header__logo {
-  margin-top: 10px;
-  margin-left: 7px;
-  float: left; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .nav {
   padding: 0;
   margin: 0;
-  display: inline;
   margin-left: 214px; }
 
 .nav__item {
   list-style: none;
-  display: inline;
-  line-height: 72px; }
+  display: inline; }
   .nav__item:after {
     content: "\2022";
     color: #fff; }
@@ -65,12 +94,15 @@ body, html {
   padding: 13px;
   display: inline-block;
   margin-top: -5px; }
+  .nav__link:hover {
+    text-decoration: underline;
+    color: #fff; }
 
 .btn {
-  display: inline;
   background-color: #e45028;
-  padding: 8px 14px 8px 14px;
-  border-radius: 5px; }
+  padding: 10px 14px;
+  border-radius: 5px;
+  margin-bottom: 4px; }
 
 .btn__link {
   color: #fff;
@@ -78,56 +110,88 @@ body, html {
   font-size: 13px;
   text-transform: uppercase;
   text-decoration: none; }
+  .btn__link:hover {
+    text-decoration: underline;
+    color: #fff; }
 
 .nav-point {
-  margin-left: 1120px;
+  right: 150px;
   position: fixed;
-  width: 25px;
-  /* z-index: 10; */ }
+  margin-top: 70px;
+  width: 80px; }
 
 .nav-point__item {
   color: #fff;
-  line-height: 11px;
   list-style: none;
-  padding: 5px; }
+  padding: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
-.pointpic:hover {
+.nav-point__link--active, .nav-point__link:hover {
   border: 1px solid #fff;
-  border-radius: 10px;
   padding: 4px;
-  margin-left: -4px;
-  margin-bottom: -4px; }
-
-.nav-point__link {
-  margin: 0;
-  padding: 0; }
+  margin-left: -5px;
+  border-radius: 10px;
+  margin-top: -6px; }
 
 .main-content {
-  width: 960px;
-  margin: auto; }
+  width: 850px;
+  height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 120px; }
 
 .burger-pic {
-  float: left; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 30px; }
 
 .dropspic {
   position: absolute;
-  margin-top: 70px;
-  margin-left: -75px; }
+  margin-top: 60px;
+  margin-left: -35px; }
 
 .burgerpic {
-  position: relative;
-  margin-left: -40px; }
+  position: relative; }
 
 .main-text {
-  display: inline-block;
-  width: 480px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 25px; }
 
 .main-text__h1 {
   font-family: Gagalin-Regular;
   color: #f9b43b;
   font-size: 72px;
   margin-left: 15px;
-  margin-top: 135px;
   font-weight: lighter; }
 
 .main-text__span {
@@ -141,11 +205,16 @@ body, html {
   letter-spacing: -2px; }
 
 .arrow {
-  margin: auto; }
-
-.arrowpic {
-  margin-top: 108px;
-  margin-left: -8px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -50px; }
 
 .advantages {
   background: url(..//img/bg.png) no-repeat;
@@ -155,75 +224,118 @@ body, html {
   min-height: 650px; }
 
 .adv-title {
-  width: 390px;
-  height: 90px;
-  position: absolute;
-  margin-left: 480px;
-  margin-top: 60px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .adv-title__h1 {
   font-family: Gagalin-Regular;
   color: #2f3234;
   font-size: 72px;
   font-weight: lighter;
-  text-align: center;
-  display: block;
-  margin: auto; }
+  margin-top: 65px; }
 
 .attribute {
-  width: 970px;
-  position: absolute;
-  margin-top: 210px;
-  margin-left: 195px; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .meat {
   width: 300px;
   margin: 10px;
   text-align: center;
-  float: left; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.meat-svg {
+  margin-top: 5px; }
 
 .meat-name__title {
   font-family: Lifehack-Medium;
   color: #000;
-  font-weight: lighter;
-  margin-top: 30px; }
+  font-weight: lighter; }
 
 .meat-article {
   font-family: Ubuntu-Light;
   font-size: 14px;
   color: #585a5a;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-bottom: 30px; }
 
 .hand-made {
   width: 300px;
   margin: 10px;
   text-align: center;
-  float: left; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap; }
+
+.hand-made-svg {
+  margin-top: 5px; }
 
 .hand-made-name__title {
   font-family: Lifehack-Medium;
   color: #000;
   font-weight: lighter;
-  margin-top: 35px; }
+  margin-top: 40px; }
 
 .hand-made-article {
   font-family: Ubuntu-Light;
   font-size: 14px;
   color: #585a5a;
   line-height: 1.5;
-  margin-top: -5px; }
+  margin-bottom: 20px; }
 
 .ingredients {
   width: 300px;
   margin: 10px;
   text-align: center;
-  float: right; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .ingredients-name__title {
   font-family: Lifehack-Medium;
   color: #000;
   font-weight: lighter;
-  margin-top: 42px;
+  margin-top: 50px;
   letter-spacing: 1px; }
 
 .ingredients-article {
@@ -231,89 +343,80 @@ body, html {
   font-size: 14px;
   color: #585a5a;
   line-height: 1.5;
-  margin-top: -10px; }
+  margin-bottom: 35px; }
 
 .reviews {
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
-  min-height: 650px; }
+  min-height: 650px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .photo1 {
   background-image: url(..//img/photo1.png);
   background-size: cover;
   width: 25%;
   position: relative;
-  height: 325px;
-  vertical-align: bottom;
-  float: left; }
+  vertical-align: bottom; }
 
 .photo2 {
   background-image: url(..//img/photo2.png);
   background-size: cover;
   width: 25%;
   position: relative;
-  height: 325px;
-  vertical-align: bottom;
-  display: inline-block; }
+  vertical-align: bottom; }
 
 .photo3 {
   background-image: url(..//img/photo3.png);
   background-size: cover;
   width: 25%;
   position: relative;
-  height: 325px;
-  vertical-align: bottom;
-  display: inline-block;
-  margin-left: -4px; }
+  vertical-align: bottom; }
 
 .photo4 {
   background-image: url(..//img/photo4.png);
   background-size: cover;
   width: 25%;
   position: relative;
-  height: 325px;
-  vertical-align: bottom;
-  display: inline-block;
-  margin-left: -4px; }
+  vertical-align: bottom; }
 
 .photo5 {
   background-image: url(..//img/photo5.png);
   background-size: cover;
   width: 25%;
   position: relative;
-  height: 325px;
-  vertical-align: bottom;
-  float: left; }
+  vertical-align: bottom; }
 
 .photo6 {
   background-image: url(..//img/photo6.png);
   background-size: cover;
   width: 25%;
   position: relative;
-  height: 325px;
-  vertical-align: bottom;
-  display: inline-block; }
+  vertical-align: bottom; }
 
 .photo7 {
   background-image: url(..//img/photo7.png);
   background-size: cover;
   width: 25%;
   position: relative;
-  height: 325px;
-  vertical-align: bottom;
-  display: inline-block;
-  margin-left: -4px; }
+  vertical-align: bottom; }
 
 .photo8 {
   background-image: url(..//img/photo8.png);
   background-size: cover;
   width: 25%;
   position: relative;
-  height: 325px;
-  vertical-align: bottom;
-  display: inline-block;
-  margin-left: -4px; }
+  vertical-align: bottom; }
 
 .review1, .review2, .review3, .review4, .review5, .review6,
 .review7, .review8 {
