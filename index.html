@@ -25,7 +25,7 @@
                     <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
                 </menu>
                 <div class="btn">
-                    <a class="btn__link"href="#">Заказать</a> <!-- Это у нас должен быть button, так как по клику на эту кнопку у нас будет всплывашка. А есть такое правило, что тег <a> - это ссылка, должна куда-то нас вести, то есть осуществлять переход. -->
+                    <button class="btn__link">Заказать</button>
                 </div>
             </header>
              <div class="nav-point">
@@ -109,10 +109,22 @@
 
     <!-- Секция "Отзывы" -->
         <div class="reviews">
-            <div class="photo1"> <!-- Во первых, это не самые хорошие классы - пронумерованные. Во-вторых, у нас для таких целей есть мождификаторы. И в-тертьих, это все же контентное изображение, поэтому ддесь их желательно вставить через тег img, и спозиционировать абсолютно -->
-                <div class="review1"> <!-- А вот тут совсем бессмысленно делать разные классы. Зачем? У нас же review1, review2 и тд идентичны. Нужно задать им все один класс. Иначе в стилях тебе же добавляет это кучу классов. DRY - don't repeat yuorself)) -->
-                    <h1 class="review1__name">Ванесса Хадженс</h1>
-                    <p class="review1__text"> Мысли все о них и о них, о них и о них. 
+            <div class="photo-back" style="background-image: url(img/photo1.png)">     
+                    <div class="review-style">
+                        <h1 class="review-style__name">Ванесса Хадженс</h1>
+                        <p class="review-style__desc"> Мысли все о них и о них, о них и о них. 
+                        Нельзя устоять, невозможно забыть...
+                        Никогда не думал, что булочки могут быть
+                        такими мягкими, котлетка такой сочной, 
+                        а сыр таким расплавленным.
+                        </p>
+                        <div class="btn-more"><a class="btn-more__link" href="#">Подробнее</a></div>
+                    </div> 
+            </div> 
+            <div class="photo-back" style="background-image: url(img/photo2.png)">
+                <div class="review-style">
+                    <h1 class="review-style__name">Константин Спилберг</h1>
+                    <p class="review-style__desc"> Мысли все о них и о них, о них и о них. 
                     Нельзя устоять, невозможно забыть...
                     Никогда не думал, что булочки могут быть
                     такими мягкими, котлетка такой сочной, 
@@ -121,10 +133,10 @@
                     <div class="btn-more"><a class="btn-more__link" href="#">Подробнее</a></div>
                 </div>
             </div> 
-            <div class="photo2">
-                <div class="review2">
-                    <h1 class="review2__name">Константин Спилберг</h1>
-                    <p class="review2__text"> Мысли все о них и о них, о них и о них. 
+            <div class="photo-back" style="background-image: url(img/photo3.png)">
+                <div class="review-style">
+                    <h1 class="review-style__name">Олеся Морозова</h1>
+                    <p class="review-style__desc"> Мысли все о них и о них, о них и о них. 
                     Нельзя устоять, невозможно забыть...
                     Никогда не думал, что булочки могут быть
                     такими мягкими, котлетка такой сочной, 
@@ -133,10 +145,10 @@
                     <div class="btn-more"><a class="btn-more__link" href="#">Подробнее</a></div>
                 </div>
             </div> 
-            <div class="photo3">
-                <div class="review3">
-                    <h1 class="review3__name">Олеся Морозова</h1>
-                    <p class="review3__text"> Мысли все о них и о них, о них и о них. 
+           <div class="photo-back" style="background-image: url(img/photo4.png)"> 
+                <div class="review-style">
+                    <h1 class="review-style__name">Дмитрий Огнев</h1>
+                    <p class="review-style__desc"> Мысли все о них и о них, о них и о них. 
                     Нельзя устоять, невозможно забыть...
                     Никогда не думал, что булочки могут быть
                     такими мягкими, котлетка такой сочной, 
@@ -145,22 +157,10 @@
                     <div class="btn-more"><a class="btn-more__link" href="#">Подробнее</a></div>
                 </div>
             </div> 
-            <div class="photo4">
-                <div class="review4">
-                    <h1 class="review4__name">Дмитрий Огнев</h1>
-                    <p class="review4__text"> Мысли все о них и о них, о них и о них. 
-                    Нельзя устоять, невозможно забыть...
-                    Никогда не думал, что булочки могут быть
-                    такими мягкими, котлетка такой сочной, 
-                    а сыр таким расплавленным.
-                    </p>
-                    <div class="btn-more"><a class="btn-more__link" href="#">Подробнее</a></div>
-                </div>
-            </div> 
-            <div class="photo5">
-                <div class="review5">
-                    <h1 class="review5__name">Артем Мельник</h1>
-                    <p class="review5__text"> Мысли все о них и о них, о них и о них. 
+            <div class="photo-back" style="background-image: url(img/photo5.png)">  
+                <div class="review-style">
+                    <h1 class="review-style__name">Артем Мельник</h1>
+                    <p class="review-style__desc"> Мысли все о них и о них, о них и о них. 
                     Нельзя устоять, невозможно забыть...
                     Никогда не думал, что булочки могут быть
                     такими мягкими, котлетка такой сочной, 
@@ -169,10 +169,10 @@
                     <div class="btn-more"><a class="btn-more__link" href="#">Подробнее</a></div>
                 </div>
             </div>  
-            <div class="photo6">
-                <div class="review6">
-                    <h1 class="review6__name">Ольга Светлая</h1>
-                    <p class="review6__text"> Мысли все о них и о них, о них и о них. 
+            <div class="photo-back" style="background-image: url(img/photo6.png)">   
+                <div class="review-style">
+                    <h1 class="review-style__name">Ольга Светлая</h1>
+                    <p class="review-style__desc"> Мысли все о них и о них, о них и о них. 
                     Нельзя устоять, невозможно забыть...
                     Никогда не думал, что булочки могут быть
                     такими мягкими, котлетка такой сочной, 
@@ -181,10 +181,10 @@
                     <div class="btn-more"><a class="btn-more__link" href="#">Подробнее</a></div>
                 </div>
             </div> 
-            <div class="photo7">
-                <div class="review7">
-                    <h1 class="review7__name">Игорь Смирнов</h1>
-                    <p class="review7__text"> Мысли все о них и о них, о них и о них. 
+            <div class="photo-back" style="background-image: url(img/photo7.png)">     
+                <div class="review-style">
+                    <h1 class="review-style__name">Игорь Смирнов</h1>
+                    <p class="review-style__desc"> Мысли все о них и о них, о них и о них. 
                     Нельзя устоять, невозможно забыть...
                     Никогда не думал, что булочки могут быть
                     такими мягкими, котлетка такой сочной, 
@@ -193,10 +193,10 @@
                     <div class="btn-more"><a class="btn-more__link" href="#">Подробнее</a></div>
                 </div>
             </div> 
-            <div class="photo8">
-                <div class="review8">
-                    <h1 class="review8__name">Максим Иванов</h1>
-                    <p class="review8__text"> Мысли все о них и о них, о них и о них. 
+            <div class="photo-back" style="background-image: url(img/photo8.png)">
+                <div class="review-style">
+                    <h1 class="review-style__name">Максим Иванов</h1>
+                    <p class="review-style__desc"> Мысли все о них и о них, о них и о них. 
                     Нельзя устоять, невозможно забыть...
                     Никогда не думал, что булочки могут быть
                     такими мягкими, котлетка такой сочной, 
