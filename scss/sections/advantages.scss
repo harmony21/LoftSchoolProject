@@ -40,6 +40,7 @@
 .hand-made {
     @include attribute_class_svg;
     flex-flow:  column wrap;
+    align-items: center;
 }
 .hand-made-svg {
     background: url(..//icons/hand.svg) center center no-repeat;
