@@ -305,7 +305,7 @@ body, html {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }}
+  align-items: center; }
 
 .hand-made-svg {
   background: url(..//icons/hand.svg) center center no-repeat;
