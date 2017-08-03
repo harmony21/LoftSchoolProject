@@ -109,7 +109,8 @@ body, html {
   font-family: Ubuntu-Medium;
   font-size: 13px;
   text-transform: uppercase;
-  text-decoration: none; }
+  background: none;
+  border: 0; }
   .btn__link:hover {
     text-decoration: underline;
     color: #fff; }
@@ -362,64 +363,13 @@ body, html {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.photo1 {
-  background-image: url(..//img/photo1.png);
+.photo-back {
   background-size: cover;
   width: 25%;
   position: relative;
   vertical-align: bottom; }
 
-.photo2 {
-  background-image: url(..//img/photo2.png);
-  background-size: cover;
-  width: 25%;
-  position: relative;
-  vertical-align: bottom; }
-
-.photo3 {
-  background-image: url(..//img/photo3.png);
-  background-size: cover;
-  width: 25%;
-  position: relative;
-  vertical-align: bottom; }
-
-.photo4 {
-  background-image: url(..//img/photo4.png);
-  background-size: cover;
-  width: 25%;
-  position: relative;
-  vertical-align: bottom; }
-
-.photo5 {
-  background-image: url(..//img/photo5.png);
-  background-size: cover;
-  width: 25%;
-  position: relative;
-  vertical-align: bottom; }
-
-.photo6 {
-  background-image: url(..//img/photo6.png);
-  background-size: cover;
-  width: 25%;
-  position: relative;
-  vertical-align: bottom; }
-
-.photo7 {
-  background-image: url(..//img/photo7.png);
-  background-size: cover;
-  width: 25%;
-  position: relative;
-  vertical-align: bottom; }
-
-.photo8 {
-  background-image: url(..//img/photo8.png);
-  background-size: cover;
-  width: 25%;
-  position: relative;
-  vertical-align: bottom; }
-
-.review1, .review2, .review3, .review4, .review5, .review6,
-.review7, .review8 {
+.review-style {
   position: absolute;
   left: 0;
   top: 0;
@@ -431,23 +381,16 @@ body, html {
   color: #fff;
   padding: 40px 20px; }
 
-.photo1:hover .review1, .photo2:hover .review2,
-.photo3:hover .review3, .photo4:hover .review4,
-.photo5:hover .review5, .photo6:hover .review6,
-.photo7:hover .review7, .photo8:hover .review8 {
+.photo-back:hover .review-style {
   opacity: 1; }
 
-.review1__name, .review2__name,
-.review3__name, .review4__name,
-.review5__name, .review6__name,
-.review7__name, .review8__name {
+.review-style__name {
   font-family: Gagalin-Regular;
   color: #fff;
   font-size: 14px;
   font-weight: lighter; }
 
-.review1__text, .review2__text, .review3__text, .review4__text,
-.review5__text, .review6__text, .review7__text, .review8__text {
+.review-style__desc {
   font-family: Ubuntu-Light;
   color: #fff;
   font-size: 14px;
