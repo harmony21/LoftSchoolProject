@@ -25,7 +25,10 @@
     flex-wrap: wrap;
 }
 .meat-svg {
-     margin-top:5px;
+    background: url(..//icons/meat.svg) center center no-repeat;
+    width: 160px;;
+    height: 100px;
+    margin-top:5px;
 }
 .meat-name__title {
     @include attribute_class_title;   
@@ -39,6 +42,9 @@
     flex-flow:  column wrap;
 }
 .hand-made-svg {
+    background: url(..//icons/hand.svg) center center no-repeat;
+    width: 160px;
+    height: 100px;
     margin-top: 5px;
 }
 .hand-made-name__title {
@@ -52,6 +58,11 @@
 .ingredients {
     @include attribute_class_svg;
     flex-wrap: wrap;
+}
+.ingredients-svg {
+    background: url(..//icons/natural.svg) center center no-repeat;
+    width: 160px;;
+    height: 100px;
 }
 .ingredients-name__title {
     @include attribute_class_title;
