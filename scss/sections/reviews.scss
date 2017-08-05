@@ -1,75 +1,66 @@
 .reviews {
-    background-size: 100% 100%; 
-    width: 100%;    
-    height:100%; 
+    background-size: 100% 100%;   
+    height:100vh; 
     min-height: $min-height;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
 }
-.photo1 {
-    background-image: url(..//img/photo1.png); 
+.photo-back { 
     @include general-photostyle;
+
+    @include tablets {
+        width: 50%;
+        background-position:  center;
+    }
 }
-.photo2 {
-    background-image: url(..//img/photo2.png); 
-    @include general-photostyle;
-}
-.photo3 {
-    background-image: url(..//img/photo3.png); 
-    @include general-photostyle;
-}
-.photo4 {
-    background-image: url(..//img/photo4.png); 
-    @include general-photostyle;
-}
-.photo5 {
-    background-image:url(..//img/photo5.png);
-    @include general-photostyle;
-}
-.photo6 {
-    background-image:url(..//img/photo6.png);
-    @include general-photostyle;
-}
-.photo7 {
-    background-image:url(..//img/photo7.png);
-    @include general-photostyle;
-}
-.photo8 {
-    background-image:url(..//img/photo8.png);
-    @include general-photostyle;
-}
-.review1, .review2, .review3, .review4, .review5, .review6,
-.review7, .review8 {
+.review-style {
     @include review-style;
+
+    @include tablets {
+        text-align: center;
+        padding: rem(5px) rem(10px);
+    }
 }
-.photo1:hover .review1, .photo2:hover .review2,
-.photo3:hover .review3, .photo4:hover .review4,
-.photo5:hover .review5, .photo6:hover .review6,
-.photo7:hover .review7, .photo8:hover .review8 {
+.photo-back:hover .review-style {
     opacity: 1;
 }
-.review1__name, .review2__name, 
-.review3__name, .review4__name,
-.review5__name, .review6__name,
-.review7__name, .review8__name {
+.review-style__name {
     @include review__name-style;
+
+    @include tablets {
+        font-size: rem(12px);
+    }
 }
-.review1__text, .review2__text, .review3__text, .review4__text,
-.review5__text, .review6__text, .review7__text, .review8__text {
+.review-style__desc {
     @include review__text-style;
+
+    @include tablets {
+        font-size: rem(12px);
+        line-height: rem(20px);
+        margin-top: rem(10px);
+    }
 }
 .btn-more {
-    padding: 10px 10px;
+    padding: rem(10px) rem(10px);
     background-color: $dark-grey;
-    width:90px;
-    border-radius:6px;
+    width:rem(90px);
+    border-radius:rem(6px);
     text-align:center;
+
+    @include tablets {
+        margin: auto;
+        padding: rem(8px) rem(8px);
+    }
 }
 .btn-more__link {
     font-family: Ubuntu-Medium;
     text-decoration: none;
     color: $white;
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
+
+    @include tablets {
+        font-size: rem(11px);
+    }
 }

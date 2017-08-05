@@ -1,3 +1,10 @@
+// resolutions 
+$desktop: rem(1200px);
+$laptop: rem(992px);
+$tablets: rem(768px);
+$phones: rem(480px);
+
+@import "config/media";
 @import "config/mixins";
 @import "config/variables";
 
@@ -5,5 +12,9 @@
 
 @import "sections/main-screen";
 @import "sections/advantages";
+@import "sections/team";
+@import "sections/menu";
 @import "sections/reviews";
+@import "sections/forms";
+@import "sections/contacts";
 

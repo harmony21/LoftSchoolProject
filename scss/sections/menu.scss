@@ -1,0 +1,89 @@
+.menu {
+	height: 100vh;
+	background-image: url(../img/burger-menu.png);
+	background-size: cover;
+    min-height: $min-height;
+    position: relative;
+    overflow-x: hidden;
+}
+.menu-title {
+	margin: 0;
+	padding-top: rem(40px);
+    padding-left: rem(220px); 
+
+    @include tablets {
+        padding-left: rem(50px);
+    }
+}
+.menu-title__name {
+    font-family: Gagalin-Regular;
+    color: $white; 
+    font-size: rem(72px);
+    font-weight: lighter;
+}
+.menu-acco {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	display: flex;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.menu-acco__item {
+	display: flex;
+} 
+.menu-acco__item_active .menu-acco__desc {
+	display: block;
+}
+.menu-acco__title {
+     width: rem(80px);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: $min-height;
+     height: 100vh;
+
+     @include tablets {
+         width: rem(60px);
+         justify-content: flex-end;
+
+     }
+}
+@each $type in (meat, veg, diet) {
+	.menu-acco__title_#{$type} {
+		background-image: url(../img/menu-#{$type}.png);
+		background-size: cover;
+	}
+}
+ .menu-acco__desc {
+    box-sizing: border-box;
+    padding: rem(60px) rem(35px);
+    font-family: Ubuntu-Light;
+    font-size: rem(14px);
+    color: $white;
+    line-height: 1.8;
+    margin: 0;
+    display: none;
+    width: rem(545px); 
+    min-height: $min-height;
+    height: 100vh;  
+    background-color: $grey;
+    opacity: 0.9;
+ }
+.menu-acco__link {
+	font-family: Gagalin-Regular;
+	font-size: rem(40px);
+	line-height: 1.5;
+	color: $white;
+	text-decoration: none;
+	transform-origin: center;
+	transform: rotate(-90deg);
+    width: rem(310px);
+    
+    @include tablets {
+        font-size: rem(35px);
+        margin-bottom: 160px;
+    }
+}

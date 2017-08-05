@@ -1,8 +1,8 @@
 .advantages {
-    background: url(..//img/bg.png) no-repeat;
-    background-size: 100% 100%; 
+    background: url(..//img/bg.png) center center no-repeat;
+    background-size: cover;
     width: 100%;    
-    height:100%; 
+    height:100vh; 
     min-height: $min-height;  
 }
 .adv-title {
@@ -12,9 +12,9 @@
 .adv-title__h1 {
     font-family: Gagalin-Regular;
     color: $dark-grey;
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: lighter;
-    margin-top: 65px;
+    margin-top: rem(65px);
 }
 .attribute {
     display: flex;
@@ -25,40 +25,77 @@
     flex-wrap: wrap;
 }
 .meat-svg {
-     margin-top:5px;
+    background: url(..//icons/meat.svg) center center no-repeat;
+    width: rem(160px);;
+    height: rem(100px);
+    margin-top:rem(5px);
 }
 .meat-name__title {
-    @include attribute_class_title;   
+    @include attribute_class_title;  
+    margin-top: rem(30px); 
+
+    @include tablets {
+        font-size: rem(22px);
+    }
  }
 .meat-article {
     @include attribute_class_article;
-    margin-bottom: 30px;  
+    margin-bottom: rem(30px);  
+
+    @include tablets {
+        font-size: rem(13px);
+    }
 }
 .hand-made {
     @include attribute_class_svg;
     flex-flow:  column wrap;
+    align-items: center;
 }
 .hand-made-svg {
-    margin-top: 5px;
+    background: url(..//icons/hand.svg) center center no-repeat;
+    width: rem(160px);
+    height: rem(100px);
+    margin-top: rem(5px);
 }
 .hand-made-name__title {
     @include attribute_class_title;
-    margin-top: 40px;
+    margin-top: rem(40px);
+
+    @include tablets {
+        font-size: rem(22px);
+    }
 }
 .hand-made-article {
     @include attribute_class_article;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        font-size: rem(13px);
+    }
 }
 .ingredients {
     @include attribute_class_svg;
     flex-wrap: wrap;
 }
+.ingredients-svg {
+    background: url(..//icons/natural.svg) center center no-repeat;
+    width: rem(160px);;
+    height: rem(100px);
+}
 .ingredients-name__title {
     @include attribute_class_title;
-    margin-top:50px;
-    letter-spacing: 1px;
+    margin-top:rem(50px);
+    letter-spacing: rem(1px);
+
+    @include tablets {
+        font-size: rem(22px);
+    }
 }
 .ingredients-article {
     @include attribute_class_article;
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
+
+    @include tablets {
+        font-size: rem(13px);
+    }
 }
