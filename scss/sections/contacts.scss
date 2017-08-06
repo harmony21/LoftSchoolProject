@@ -3,10 +3,10 @@
     background-size: cover;   
     height:100vh; 
     min-height: $min-height;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 .footer {
     background-image: url(..//img/texture.png);
@@ -15,12 +15,21 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+        height: rem(115px);
+    }
 }
 .contact-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
+
+    @include phones {
+        width: 100%;
+    }
 }
 .contact-text__address {
     display: flex;
@@ -34,11 +43,21 @@
     @include tablets {
         margin-left: rem(24px);
     }
+
+    @include phones {
+        justify-content: center;
+        margin-top: rem(15px);
+    }
 }
 .wrap {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @include phones {
+        justify-content: center;
+        margin-top: rem(5px);
+    }
 }
 .icon-phone {
     width: rem(15px);
@@ -67,8 +86,12 @@
     @include tablets {
         margin-right: rem(15px);
     }
-}
 
+    @include phones {
+        width: 100%;
+        justify-content: center;
+    }
+}
 .icon-social
 {
     width:rem(20px);

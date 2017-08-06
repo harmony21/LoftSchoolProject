@@ -25,6 +25,12 @@
         margin-top: rem(50px);
         font-size: rem(60px);
     }
+
+    @include phones {
+        text-align: center;
+        margin-top: rem(30px);
+        font-size: rem(56px);
+    }
 }
 .form-feedback {
     width: 75%;
@@ -34,6 +40,12 @@
 
     @include tablets {
         flex-direction: column;
+        margin-bottom: rem(40px);
+    }
+
+    @include phones {
+        width: 98%;
+        margin-top: rem(30px);
     }
 }
 label {
@@ -58,11 +70,15 @@ input {
     display: flex;
     justify-content: space-between;
     padding: rem(5px) rem(25px);
+
+    @include phones {
+        padding: rem(5px) 0;
+    }
 }
 .form-name {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
 }
 .form-name > label {
     margin-bottom: rem(-18px);
@@ -72,6 +88,10 @@ input {
     flex-direction: column;
     align-content: center;
     padding: rem(5px) rem(25px);
+
+    @include phones {
+        padding: rem(5px) 0;
+    }
 }
 .input-street {
     margin-top: rem(-5px);
@@ -80,12 +100,16 @@ input {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: rem(5px) rem(25px);   
+    padding: rem(5px) rem(25px); 
+    
+    @include phones {
+        padding: rem(5px) 0;
+    }
 }
 .house {
     display: flex;
     flex-direction: column;
-    width:24%;   
+    width:25%;   
 }
 .form-right {
     width: 50%;
@@ -98,6 +122,10 @@ input {
     display: flex;
     flex-direction: column;
     padding: rem(5px) rem(25px); 
+
+    @include phones {
+        padding: rem(5px) 0;
+    }
 }
 textarea {
     margin: rem(10px);
@@ -114,6 +142,10 @@ textarea {
         margin-left: 0;
         margin-right: rem(20px);
     }
+
+    @include phones {
+        justify-content: center;
+    }
 }
 .checkbox {
     display: flex;
@@ -123,9 +155,18 @@ textarea {
     .checkbox-text {
         margin-left: 0;
     }
+
+    @include phones {
+        justify-content: center;
+    }
 }
 .buttons-form {
     padding: rem(5px) rem(25px);
+
+    @include phones {
+        display: flex;
+        justify-content: center;
+    }
 }
 input[type="submit"] {
     background-color: $orange;

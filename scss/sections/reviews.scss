@@ -52,6 +52,10 @@
         margin: auto;
         padding: rem(8px) rem(8px);
     }
+
+    @include phones {
+        display: none;
+    }
 }
 .btn-more__link {
     font-family: Ubuntu-Medium;

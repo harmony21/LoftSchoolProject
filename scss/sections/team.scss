@@ -29,6 +29,7 @@
     @include tablets {
         margin-top: rem(30px);
         text-align: center;
+        margin-left: 0;
         width: 100%;
     }
 }
@@ -41,13 +42,13 @@
     @include tablets {
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 }
 .team-acco__title {
     font-family: Gagalin-Regular;
     font-size: rem(14px);
     font-weight: lighter;
-    text-transform: uppercase;
     color: $white;
     margin-left: rem(25px);
     display: flex;
@@ -61,13 +62,16 @@
         border-bottom: none;
         margin-right: rem(15px);
         margin-left: rem(20px);
+
+        @include tablets {
+            margin-left: 0;
+        }
     }
 
     @include tablets {
         font-size: rem(22px);
         display: flex;
         justify-content: center;
-        align-items: center;
         margin-left: 0;
     }
 }
@@ -105,6 +109,7 @@
     @include tablets {
         width: 100%;
         text-align: center;
+        padding: 0;
     }
 }
 .team-acco__desc-text {
@@ -118,10 +123,16 @@
     width: rem(200px);
     margin-bottom: rem(-30px);
 
-      @include tablets {
+    @include tablets {
         width: 100%;
         margin-bottom: 0;
         text-align: center;
+        padding: 0;
+    }
+
+    @include phones {
+        width: 80%;
+        margin: auto;
     }
 }
 .team-acco__avatar {
@@ -132,6 +143,10 @@
     position: relative;
     margin-left: rem(45px);
     margin-top: rem(15px);
+
+    @include tablets {
+        margin-left: 0;
+    }
 }
 .team-acco__avatar-pic {
     position: absolute;

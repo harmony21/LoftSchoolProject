@@ -14,6 +14,10 @@
     @include tablets {
         padding-left: rem(50px);
     }
+
+    @include phones {
+        padding-top: 0;
+    }
 }
 .menu-title__name {
     font-family: Gagalin-Regular;
@@ -34,7 +38,7 @@
 	display: flex;
 } 
 .menu-acco__item_active .menu-acco__desc {
-	display: block;
+    display: block;
 }
 .menu-acco__title {
      width: rem(80px);
@@ -45,11 +49,10 @@
      min-height: $min-height;
      height: 100vh;
 
-     @include tablets {
+    @include tablets {
          width: rem(60px);
          justify-content: flex-end;
-
-     }
+    }
 }
 @each $type in (meat, veg, diet) {
 	.menu-acco__title_#{$type} {
@@ -71,6 +74,17 @@
     height: 100vh;  
     background-color: $grey;
     opacity: 0.9;
+
+    @include tablets {
+        width: rem(572px); 
+    }
+    
+    @include phones {
+        width: rem(283px); 
+        line-height: 1.6;
+        font-size: rem(13px);
+        padding: rem(45px) rem(30px);    
+    }
  }
 .menu-acco__link {
 	font-family: Gagalin-Regular;

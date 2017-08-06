@@ -2,7 +2,7 @@
     background: url(..//img/bg.png) center center no-repeat;
     background-size: cover;
     width: 100%;    
-    height:100vh; 
+    height: 100vh; 
     min-height: $min-height;  
 }
 .adv-title {
@@ -15,20 +15,49 @@
     font-size: rem(72px);
     font-weight: lighter;
     margin-top: rem(65px);
+
+    @include phones {
+        font-size: rem(60px);
+        margin-top: rem(40px);
+    }
 }
 .attribute {
     display: flex;
     justify-content: center;
+
+    @include phones {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
 }
 .meat {
     @include attribute_class_svg;
     flex-wrap: wrap;
+
+    @include phones {
+       flex-wrap: nowrap;
+       width: 100%;
+       align-items: center;
+       margin-top: rem(-5px);
+       margin-left: rem(-5px);
+    }
 }
 .meat-svg {
     background: url(..//icons/meat.svg) center center no-repeat;
-    width: rem(160px);;
+    width: rem(160px);
     height: rem(100px);
     margin-top:rem(5px);
+
+    @include phones {
+        width: rem(300px);
+        margin-top: 0;
+    }
+}
+.meat__desc {
+    @include phones {
+        text-align: left;
+        margin-left: rem(20px);
+    }
 }
 .meat-name__title {
     @include attribute_class_title;  
@@ -36,6 +65,10 @@
 
     @include tablets {
         font-size: rem(22px);
+    }
+
+    @include phones {
+        font-size: rem(20px);
     }
  }
 .meat-article {
@@ -50,12 +83,29 @@
     @include attribute_class_svg;
     flex-flow:  column wrap;
     align-items: center;
+
+    @include phones {
+       flex-flow: nowrap;
+       width: 100%;
+       margin-left: rem(20px);
+       margin-top: rem(-45px); 
+    }
 }
 .hand-made-svg {
     background: url(..//icons/hand.svg) center center no-repeat;
     width: rem(160px);
     height: rem(100px);
     margin-top: rem(5px);
+
+    @include phones {
+        width: rem(300px);
+    }
+}
+.hand-made__desc {
+    @include phones {
+        text-align: left;
+        margin-left: rem(35px);
+    }
 }
 .hand-made-name__title {
     @include attribute_class_title;
@@ -63,6 +113,10 @@
 
     @include tablets {
         font-size: rem(22px);
+    }
+
+     @include phones {
+        font-size: rem(20px);
     }
 }
 .hand-made-article {
@@ -76,11 +130,25 @@
 .ingredients {
     @include attribute_class_svg;
     flex-wrap: wrap;
+
+      @include phones {
+       flex-wrap: nowrap;
+       align-items: center;
+       width: 100%;
+       margin-left: rem(25px);
+       margin-top: rem(-50px);
+    }
 }
 .ingredients-svg {
     background: url(..//icons/natural.svg) center center no-repeat;
-    width: rem(160px);;
+    width: rem(160px);
     height: rem(100px);
+}
+.ingredients__desc {
+    @include phones {
+        text-align: left;
+        margin-left: rem(35px);
+    }
 }
 .ingredients-name__title {
     @include attribute_class_title;
@@ -89,6 +157,10 @@
 
     @include tablets {
         font-size: rem(22px);
+    }
+
+    @include phones {
+        font-size: rem(20px);
     }
 }
 .ingredients-article {
