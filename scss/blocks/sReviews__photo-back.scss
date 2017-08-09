@@ -1,0 +1,62 @@
+.photo-back { 
+    @include general-photostyle;
+
+    @include tablets {
+        width: 50%;
+        background-position:  center;
+    }
+}
+.review-style {
+    @include review-style;
+
+    @include tablets {
+        text-align: center;
+        padding: rem(5px) rem(10px);
+    }
+}
+.photo-back:hover .review-style {
+    opacity: 1;
+}
+.review-style__name {
+    @include review__name-style;
+
+    @include tablets {
+        font-size: rem(12px);
+    }
+}
+.review-style__desc {
+    @include review__text-style;
+
+    @include tablets {
+        font-size: rem(12px);
+        line-height: rem(20px);
+        margin-top: rem(10px);
+    }
+}
+.btn-more {
+    padding: rem(10px) rem(10px);
+    background-color: $dark-grey;
+    width:rem(90px);
+    border-radius:rem(6px);
+    text-align:center;
+
+    @include tablets {
+        margin: auto;
+        padding: rem(8px) rem(8px);
+    }
+
+    @include phones {
+        display: none;
+    }
+}
+.btn-more__link {
+    font-family: Ubuntu-Medium;
+    text-decoration: none;
+    color: $white;
+    font-size: rem(13px);
+    text-transform: uppercase;
+
+    @include tablets {
+        font-size: rem(11px);
+    }
+}

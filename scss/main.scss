@@ -4,12 +4,15 @@ $laptop: rem(992px);
 $tablets: rem(768px);
 $phones: rem(480px);
 
+//configuration
 @import "config/media";
 @import "config/mixins";
 @import "config/variables";
 
+//fonts
 @import "layout/fonts";
 
+//sections
 @import "sections/main-screen";
 @import "sections/advantages";
 @import "sections/team";
@@ -18,3 +21,23 @@ $phones: rem(480px);
 @import "sections/forms";
 @import "sections/contacts";
 
+//blocks
+@import "blocks/sMain-screen__header";
+@import "blocks/sMain-screen__fixed-menu";
+@import "blocks/sMain-screen__main-content";
+@import "blocks/sMain-screen__arrow";
+
+@import "blocks/sAdvantages__attribute";
+
+@import "blocks/sTeam__team-acco";
+
+@import "blocks/sMenu__menu-acco";
+
+@import "blocks/sReviews__photo-back";
+
+@import "blocks/sForms__form-left";
+@import "blocks/sForms__form-right";
+
+@import "blocks/sContacts__footer";
+@import "blocks/sContacts__contact-text";
+@import "blocks/sContacts__icons";

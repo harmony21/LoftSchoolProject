@@ -1,0 +1,30 @@
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;  
+    margin-right: rem(80px);
+
+    @include tablets {
+        margin-right: rem(15px);
+    }
+
+    @include phones {
+        width: 100%;
+        justify-content: center;
+    }
+}
+.icon-social
+{
+    width:rem(20px);
+    height:rem(20px);
+    margin:rem(20px);
+    fill: $grey;
+    &:hover {
+        fill: $white;
+    }
+
+    @include tablets {
+        margin-left: rem(5px);
+        margin-right: rem(15px);
+    }
+}

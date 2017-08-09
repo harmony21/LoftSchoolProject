@@ -1,0 +1,9 @@
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(90px);
+
+    @include tablets {
+        margin-top: 0;
+    }
+}

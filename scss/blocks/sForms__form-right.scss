@@ -1,0 +1,81 @@
+.form-right {
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    padding: rem(5px) rem(25px); 
+
+    @include phones {
+        padding: rem(5px) 0;
+    }
+}
+textarea {
+    margin: rem(10px);
+    border-radius: rem(5px); 
+    height: rem(120px);
+}
+.radio {
+    padding: 0 rem(25px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:rem(40px);
+    .radio-text {
+        margin-left: 0;
+        margin-right: rem(20px);
+    }
+
+    @include phones {
+        justify-content: center;
+    }
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    padding: 0 rem(25px);
+    height:rem(40px);
+    .checkbox-text {
+        margin-left: 0;
+    }
+
+    @include phones {
+        justify-content: center;
+    }
+}
+.buttons-form {
+    padding: rem(5px) rem(25px);
+
+    @include phones {
+        display: flex;
+        justify-content: center;
+    }
+}
+input[type="submit"] {
+    background-color: $orange;
+    padding: rem(10px) rem(14px);
+    border-radius: rem(5px);
+    border: none;
+    color: $white;
+    font-family: Ubuntu-Medium;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+input[type="reset"] {
+    color: $white;
+    font-family: Ubuntu-Light;
+    font-size: rem(13px);
+    background: none;
+    border: none;
+    &:hover {
+        cursor: pointer;
+    }
+}

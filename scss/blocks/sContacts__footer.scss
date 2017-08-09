@@ -1,0 +1,13 @@
+.footer {
+    background-image: url(..//img/texture.png);
+    height: rem(58px);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+        height: rem(115px);
+    }
+}

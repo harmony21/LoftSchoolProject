@@ -1,0 +1,135 @@
+.attribute {
+    display: flex;
+    justify-content: center;
+
+    @include phones {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+.attribute-wrap {
+    @include attribute_class_svg;
+    flex-wrap: wrap;
+
+    @include phones {
+       flex-wrap: nowrap;
+       width: 98%;
+       margin-top: rem(-5px);
+    }
+}
+.attribute-wrap__meat-svg {
+    background: url(..//icons/meat.svg) center center no-repeat;
+    width: rem(160px);
+    height: rem(100px);
+    margin-top:rem(5px);
+
+    @include phones {
+        margin-top: 0;
+        padding: rem(30px);
+    }
+}
+.attribute-wrap__meat-desc {
+    @include phones {
+        text-align: left;
+        padding: 0 rem(10px);
+    }
+}
+.meat-name__title {
+    @include attribute_class_title;  
+    margin-top: rem(30px); 
+
+    @include tablets {
+        font-size: rem(22px);
+    }
+
+    @include phones {
+        font-size: rem(20px);
+    }
+ }
+.meat-article {
+    @include attribute_class_article;
+    margin-bottom: rem(30px);  
+
+    @include tablets {
+        font-size: rem(13px);
+    }
+}
+
+.attribute-wrap__hand-made-svg {
+    background: url(..//icons/hand.svg) center center no-repeat;
+    width: rem(160px);
+    height: rem(100px);
+    margin-top: rem(5px);
+
+    @include phones {
+        margin-left: rem(20px);
+        margin-top: rem(-15px); 
+        padding: rem(30px);
+    }
+}
+.attribute-wrap__hand-made-desc {
+    @include phones {
+        text-align: left;
+        padding: 0 rem(10px);
+        margin-top: rem(-30px); 
+    }
+}
+.hand-made-name__title {
+    @include attribute_class_title;
+    margin-top: rem(40px);
+
+    @include tablets {
+        font-size: rem(22px);
+    }
+
+     @include phones {
+        font-size: rem(20px);
+    }
+}
+.hand-made-article {
+    @include attribute_class_article;
+    margin-bottom: rem(20px);
+
+    @include tablets {
+        font-size: rem(13px);
+    }
+}
+
+.attribute-wrap__ingredients-svg {
+    background: url(..//icons/natural.svg) center center no-repeat;
+    width: rem(160px);
+    height: rem(100px);
+
+    @include phones {
+        padding: rem(30px);
+        margin-top: rem(-30px);
+    }
+}
+.attribute-wrap__ingredients-desc {
+    @include phones {
+        text-align: left;
+        margin-top:rem(-40px);
+        margin-left:rem(-10px);
+    }
+}
+.ingredients-name__title {
+    @include attribute_class_title;
+    margin-top:rem(50px);
+    letter-spacing: rem(1px);
+
+    @include tablets {
+        font-size: rem(22px);
+    }
+
+    @include phones {
+        font-size: rem(20px);
+    }
+}
+.ingredients-article {
+    @include attribute_class_article;
+    margin-bottom: rem(35px);
+
+    @include tablets {
+        font-size: rem(13px);
+    }
+}

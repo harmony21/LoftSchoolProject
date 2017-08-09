@@ -1,0 +1,56 @@
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    @include phones {
+        width: 100%;
+    }
+}
+.contact-text__address {
+    display: flex;
+    margin: 0;
+    font-family: Ubuntu-Light;
+    color: $white;
+    font-size: rem(14px);
+    margin-left: rem(80px);
+    margin-bottom: rem(7px);
+
+    @include tablets {
+        margin-left: rem(24px);
+    }
+
+    @include phones {
+        justify-content: center;
+        margin-top: rem(15px);
+    }
+}
+.wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include phones {
+        justify-content: center;
+        margin-top: rem(5px);
+    }
+}
+.icon-phone {
+    width: rem(15px);
+    height: rem(15px);
+    margin-left: rem(80px);
+    fill: $orange;
+
+    @include tablets {
+        margin-left: rem(24px);
+    }
+}
+.contact-text__phone {
+    margin: 0;
+    font-family: Ubuntu-Medium;
+    color: $orange;
+    font-size: rem(14px);
+    font-weight: bold;
+    margin-left: rem(10px);
+}

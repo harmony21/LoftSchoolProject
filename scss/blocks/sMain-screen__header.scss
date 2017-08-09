@@ -1,0 +1,93 @@
+.header {
+    height: rem(90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 rem(25px);
+    }
+} 
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+.nav {
+    padding: 0;
+    margin: 0;
+    margin-left:rem(214px);
+
+    @include tablets {
+        display: none;
+    }
+}
+.nav__item {
+    list-style: none;
+    display: inline;   
+        &:after {
+            content: "\2022";
+            color: $white;
+        }
+}
+.nav__item:last-child::after {
+    content: "";
+}
+.nav__link {
+    text-decoration: none;
+    color: $white;
+    font-family: Ubuntu-Medium;
+    font-size: rem(13px);
+    color: $white;
+    text-transform: uppercase;
+    padding: rem(13px);
+    display:inline-block;
+    margin-top: rem(-5px);
+        &:hover {
+            text-decoration: underline;
+            color: $white;
+        }
+}
+.btn {
+    margin-bottom: rem(4px);
+    display: flex;
+    align-items: center;
+}
+.btn__link {
+    background-color: $orange;
+    padding: rem(10px) rem(14px);
+    color: $white;
+    font-family: Ubuntu-Medium;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    border: 0;
+    border-radius: rem(5px);
+    &:hover {
+        text-decoration: underline;
+        color: $white;
+        cursor: pointer;
+    }
+}
+.hamburger-menu-link {
+	vertical-align: middle;
+	position: relative;
+	height: rem(24px);
+	align-items: center;
+    margin-left: rem(30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+    @include tablets {
+        display: block;
+        display: flex;
+    }
+}
+.hamburger-menu-link__bars {
+	background: $white;
+	width: rem(24px);
+	height: rem(5px);
+    border-radius: rem(3px);
+ }

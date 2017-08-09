@@ -1,0 +1,46 @@
+.form-left {
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+.name-phone {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(5px) rem(25px);
+
+    @include phones {
+        padding: rem(5px) 0;
+    }
+}
+.form-name {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.street {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: rem(5px) rem(25px);
+
+    @include phones {
+        padding: rem(5px) 0;
+    }
+}
+.inform-house {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: rem(5px) rem(25px); 
+    
+    @include phones {
+        padding: rem(5px) 0;
+    }
+}
+.house {
+    display: flex;
+    flex-direction: column;
+    width:25%;   
+}
