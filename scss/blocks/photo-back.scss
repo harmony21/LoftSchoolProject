@@ -1,0 +1,8 @@
+.photo-back { 
+    @include general-photostyle;
+
+    @include tablets {
+        width: 50%;
+        background-position:  center;
+    }
+}

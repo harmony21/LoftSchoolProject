@@ -1,0 +1,35 @@
+.nav {
+    padding: 0;
+    margin: 0;
+    margin-left:rem(214px);
+
+    @include tablets {
+        display: none;
+    }
+}
+.nav__item {
+    list-style: none;
+    display: inline;   
+        &:after {
+            content: "\2022";
+            color: $white;
+        }
+}
+.nav__item:last-child::after {
+    content: "";
+}
+.nav__link {
+    text-decoration: none;
+    color: $white;
+    font-family: Ubuntu-Medium;
+    font-size: rem(13px);
+    color: $white;
+    text-transform: uppercase;
+    padding: rem(13px);
+    display:inline-block;
+    margin-top: rem(-5px);
+        &:hover {
+            text-decoration: underline;
+            color: $white;
+        }
+}

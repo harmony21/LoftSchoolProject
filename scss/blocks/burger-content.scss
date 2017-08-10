@@ -1,0 +1,8 @@
+.burger-content {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        margin-top: rem(60px);
+    }
+}

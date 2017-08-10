@@ -7,10 +7,10 @@
         flex-direction: column;
     }
 }
-.burger-pic {
+.main-content__burger-pic {
     display: flex;
 }  
-.dropspic {
+.main-content__burger-pic-dropspic {
     position: absolute;
     margin-top: rem(60px);
     margin-left: rem(-35px);
@@ -19,7 +19,7 @@
         display: none;
     }
 }
-.burgerpic {
+.main-content__burger-pic-burgerimg {
     position: relative;
 
     @include tablets {
@@ -30,7 +30,7 @@
         margin-left: rem(-150px);
     }
 }
-.main-text {
+.main-content__main-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@
         margin-top: rem(250px);
     }
 }
-.main-text__h1 { 
+.main-content__main-text-title-name { 
     font-family: Gagalin-Regular;
     color: $yellow;
     font-size: rem(72px);
@@ -52,7 +52,7 @@
         text-align: center;
     }
 }
-.main-text__span {
+.main-content__main-text-desc {
     font-family: Lifehack-Medium;
     color: $white;
     font-size: rem(65px);

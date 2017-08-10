@@ -1,0 +1,40 @@
+.review-style {
+    @include review-style;
+
+    @include tablets {
+        text-align: center;
+        padding: rem(5px) rem(10px);
+    }
+
+    @include phones {
+        display: flex;
+        align-items: center;
+    }
+}
+.photo-back:hover .review-style {
+    opacity: 1;
+}
+.review-style__name {
+    @include review__name-style;
+
+    @include tablets {
+        font-size: rem(12px);
+    }
+
+    @include phones {
+         font-size: rem(20px);
+    }
+}
+.review-style__desc {
+    @include review__text-style;
+
+    @include tablets {
+        font-size: rem(12px);
+        line-height: rem(20px);
+        margin-top: rem(10px);
+    }
+
+    @include phones {
+        display: none;
+    }
+}

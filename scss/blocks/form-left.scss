@@ -5,7 +5,7 @@
         width: 100%;
     }
 }
-.name-phone {
+.form-left__name-phone {
     display: flex;
     justify-content: space-between;
     padding: rem(5px) rem(25px);
@@ -14,12 +14,13 @@
         padding: rem(5px) 0;
     }
 }
-.form-name {
+.form-left__name-phone-name,
+.form-left__name-phone-phone {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-.street {
+.form-left__street {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -29,7 +30,7 @@
         padding: rem(5px) 0;
     }
 }
-.inform-house {
+.form-left__house {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -39,7 +40,7 @@
         padding: rem(5px) 0;
     }
 }
-.house {
+.form-left__house-inform {
     display: flex;
     flex-direction: column;
     width:25%;   

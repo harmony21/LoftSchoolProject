@@ -12,32 +12,43 @@ $phones: rem(480px);
 //fonts
 @import "layout/fonts";
 
-//sections
-@import "sections/main-screen";
-@import "sections/advantages";
-@import "sections/team";
-@import "sections/menu";
-@import "sections/reviews";
-@import "sections/forms";
-@import "sections/contacts";
-
 //blocks
-@import "blocks/sMain-screen__header";
-@import "blocks/sMain-screen__fixed-menu";
-@import "blocks/sMain-screen__main-content";
-@import "blocks/sMain-screen__arrow";
+@import "blocks/main-screen";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/fixed-menu";
+@import "blocks/main-content";
+@import "blocks/arrow";
 
-@import "blocks/sAdvantages__attribute";
+@import "blocks/advantages";
+@import "blocks/attribute";
+@import "blocks/attribute-wrap";
 
-@import "blocks/sTeam__team-acco";
+@import "blocks/burgers";
+@import "blocks/arrow-left";
+@import "blocks/burger-content";
+@import "blocks/burger-left";
+@import "blocks/burger-right";
+@import "blocks/arrow-right";
 
-@import "blocks/sMenu__menu-acco";
+@import "blocks/team";
+@import "blocks/team-acco";
 
-@import "blocks/sReviews__photo-back";
+@import "blocks/menu";
+@import "blocks/menu-acco";
 
-@import "blocks/sForms__form-left";
-@import "blocks/sForms__form-right";
+@import "blocks/reviews";
+@import "blocks/photo-back";
+@import "blocks/review-style";
+@import "blocks/btn-more";
 
-@import "blocks/sContacts__footer";
-@import "blocks/sContacts__contact-text";
-@import "blocks/sContacts__icons";
+@import "blocks/forms";
+@import "blocks/form-feedback";
+@import "blocks/form-left";
+@import "blocks/form-right";
+
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/contact-inform";
+@import "blocks/icons";

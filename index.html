@@ -29,11 +29,11 @@
                     </menu>
                     <div class="btn">
                         <button class="btn__link" href="#">Заказать</button>
-                        <a href="" class="hamburger-menu-link">
-                            <div class="hamburger-menu-link__bars"></div> 
-                            <div class="hamburger-menu-link__bars"></div> 
-                            <div class="hamburger-menu-link__bars"></div>
-                        </a>
+                        <button href="" class="hamburger-menu__link">
+                            <div class="hamburger-menu__link-bars"></div> 
+                            <div class="hamburger-menu__link-bars"></div> 
+                            <div class="hamburger-menu__link-bars"></div>
+                        </button>
                     </div>
                 </header>
                 <ul class="fixed-menu">
@@ -63,16 +63,14 @@
                     </li>
                 </ul>
                 <div class="main-content">
-                    <div class="burger-pic">
-                        <img class="dropspic" src="icons/drops.svg">  
-                        <img class="burgerpic" src="img/steam.png">  
+                    <div class="main-content__burger-pic">
+                        <img class="main-content__burger-pic-dropspic" src="icons/drops.svg">  
+                        <img class="main-content__burger-pic-burgerimg" src="img/steam.png">  
                     </div>
-                    <div class="main-text">
-                        <div class="main-text__title">
-                            <h1 class="main-text__h1">Мы делаем 
-                                <span class="main-text__span">натуральные <br> бургеры</span>
-                            </h1>
-                        </div> 
+                    <div class="main-content__main-text">
+                        <h1 class="main-content__main-text-title-name">Мы делаем 
+                            <span class="main-content__main-text-desc">натуральные <br> бургеры</span>
+                        </h1>
                     </div>  
                 </div>  
                 <div class="arrow">
@@ -83,150 +81,196 @@
     <!-- Секция "Мы лучшие"-->
         <section class="advantages">
             <div class="container">
-                <div class="adv-title">
-                    <h1 class="adv-title__h1">Мы лучшие</h1>
-                </div>
-                <div class="attribute">
+                <div class="adv-title">   
+                    <h1 class="adv-title__name">Мы лучшие</h1>
+                </div>   
+                <div class="attribute">  
                     <div class="attribute-wrap">
                         <div class="attribute-wrap__meat-svg"></div>
-                            <div class="attribute-wrap__meat-desc">
-                                <div class="meat-name">
-                                    <h2 class="meat-name__title">100% свежее мясо</h2>
-                                </div>
-                                <div class="meat-article">
-                                    <p>Драма представляет собой деструктивный цикл.
+                            <div class="attribute-wrap__meat-desc"> 
+                                <h2 class="attribute-wrap__meat-title">100% свежее мясо</h2>
+                                <p class="attribute-wrap__meat-article">
+                                    Драма представляет собой деструктивный цикл.
                                     Анапест представляет собой анапест. Ямб неравномерен.
-                                    </p>
-                                </div>
-                            </div>
+                                </p>
+                            </div> 
                     </div>
                     <div class="attribute-wrap">
                         <div class="attribute-wrap__hand-made-svg"></div>
-                            <div class="attribute-wrap__hand-made-desc">
-                                <div class="hand-made-name">
-                                    <h2 class="hand-made-name__title">Ручная сборка</h2>
-                                </div>
-                                <div class="hand-made-article">
-                                    <p>Драма представляет собой деструктивный цикл.
+                            <div class="attribute-wrap__hand-made-desc"> 
+                                <h2 class="attribute-wrap__hand-made-title">Ручная сборка</h2>
+                                <p class="attribute-wrap__hand-made-article">
+                                    Драма представляет собой деструктивный цикл.
                                     Анапест представляет собой анапест. Первое полустишие 
                                     притягивает сюжетный реформаторский пафос.
-                                    </p>
-                                </div>
-                            </div>  
+                                </p>
+                            </div>   
                     </div> 
                     <div class="attribute-wrap">
                         <div class="attribute-wrap__ingredients-svg"></div>
-                            <div class="attribute-wrap__ingredients-desc">
-                                <div class="ingredients-name">
-                                    <h2 class="ingredients-name__title">Натуральные ингредиенты</h2>
-                                </div>
-                                <div class="ingredients-article">
-                                    <p>Драма представляет собой деструктивный цикл.
+                            <div class="attribute-wrap__ingredients-desc"> 
+                                <h2 class="attribute-wrap__ingredients-title">Натуральные ингредиенты</h2>
+                                <p class="attribute-wrap__ingredients-article">
+                                    Драма представляет собой деструктивный цикл.
                                     Анапест представляет собой анапест.
-                                    </p>
-                                </div>
-                            </div>          
+                                </p>
+                            </div>           
                     </div> 
-                </div>     
+                </div>       
+            </div>
+        </section>
+    <!-- Секция "Бургеры"-->
+        <section class="burgers">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="arrow-left">
+                        <div class="arrow-left__pic">
+                            <a href="#"><img src="icons/arrow-scroll.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="burger-content">
+                        <div class="burger-left">
+                            <div class="burger-left__pic">
+                                <img class="burger-left__pic" src="img/burger-slider.png" alt="">
+                            </div>
+                            <div class="burger-left__composition">
+                                <a class="burger-left__composition-link" href="#">
+                                    <svg class="burger-left__composition-svg">
+                                        <use xlink:href="sprite/sprite.svg#burger"></use> 
+                                    </svg>
+                                    <h1 class="burger-left__composition-title">Состав</h1>
+                                </a>
+                            </div>
+                            <div class="burger-left__calories">
+                                <svg class="burger-left__calories-svg">
+                                     <use xlink:href="sprite/sprite.svg#kkal"></use> 
+                                     <text x="13" y="50">1200</text>
+                                </svg>
+                                <div class="burger-left__calories-title">
+                                    <h1>ккал</h1>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="burger-right">
+                            <div class="burger-right__title">
+                                <h1 class="burger-right__title-text">Dark beef burger</h1>
+                            </div>
+                            <div class="burger-right__desc">
+                                Ваш старый добрый знакомый,
+                                с рубленым бифштексом из 100%
+                                говядины, тремя кусочками
+                                нежнейшего сыра эмменталь, 
+                                двумя помидорами, луком,
+                                салатом и соусом гриль теперь 
+                                с добавлением экзотического
+                                соуса чураско.
+                            </div>
+                            <div class="burger-right__price">
+                                <h1 class="price">500</h1>
+                                <span class="rubles">рублей</span>
+                                <div class="btn">
+                                    <button class="btn__link" href="#">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-right">
+                        <div class="arrow-right__pic">
+                            <a href="#"><img src="icons/arrow-scroll.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>    
     <!-- Секция "Команда"-->
         <section class="team">
-                <div class="team__content">
-                    <div class="section-title">
-                        Команда
-                    </div>
-                    <ul class="team-acco">
-                        <li class="team-acco__item">
-                            <div class="team-acco__title">
-                                Дэниел Рэдклифф
-                            </div>  
-                            <div class="team-acco__content">
-                                <div class="team-acco__image">
-                                    <div class="team-acco__avatar">
-                                        <img src="img/avatar.png" alt="" class="team-acco__avatar-pic">
-                                    </div>
+            <div class="team__content">
+                <h1 class="team__content-title">
+                    Команда
+                </h1>
+                <ul class="team-acco">
+                    <li class="team-acco__item">
+                        <div class="team-acco__title">
+                            Дэниел Рэдклифф
+                        </div>  
+                        <div class="team-acco__content">
+                            <div class="team-acco__image">
+                                <div class="team-acco__avatar">
+                                    <img src="img/avatar.png" alt="" class="team-acco__avatar-pic">
                                 </div>
-                                <div class="team-acco__desc">
-                                    <div class="team-acco__occ">
-                                        Оператор
-                                    </div>
-                                    <div class="team-acco__desc-text">
-                                        <p>
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </p>
-                                    </div>
-                                </div> 
-                            </div>       
-                        </li>
-                        <li class="team-acco__item active">
-                            <div class="team-acco__title">
-                                Ричард Джеймс
-                            </div>  
-                            <div class="team-acco__content">
-                                <div class="team-acco__image">
-                                    <div class="team-acco__avatar">
-                                        <img src="img/avatar.png" alt="" class="team-acco__avatar-pic">
-                                    </div>
+                            </div>
+                            <div class="team-acco__desc">
+                                <div class="team-acco__occ">
+                                    Оператор
                                 </div>
-                                <div class="team-acco__desc">
-                                    <div class="team-acco__occ">
-                                        Оператор
-                                    </div>
-                                    <div class="team-acco__desc-text">
-                                        <p>
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </p>
-                                    </div>
-                                </div> 
-                            </div>       
-                        </li>
-                        <li class="team-acco__item">
-                            <div class="team-acco__title">
-                                Джейк Финн
-                            </div>  
-                            <div class="team-acco__content">
-                                <div class="team-acco__image">
-                                    <div class="team-acco__avatar">
-                                        <img src="img/avatar.png" alt="" class="team-acco__avatar-pic">
-                                    </div>
+                                <div class="team-acco__desc-text">
+                                    С радостью поможет подобрать идеальный бургер и оформить заказ.
                                 </div>
-                                <div class="team-acco__desc">
-                                    <div class="team-acco__occ">
-                                        Оператор
-                                    </div>
-                                    <div class="team-acco__desc-text">
-                                        <p>
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </p>
-                                    </div>
-                                </div> 
-                            </div>       
-                        </li>
-                        <li class="team-acco__item">
-                            <div class="team-acco__title">
-                                Николай Иванов
-                            </div>  
-                            <div class="team-acco__content">
-                                <div class="team-acco__image">
-                                    <div class="team-acco__avatar">
-                                        <img src="img/avatar.png" alt="" class="team-acco__avatar-pic">
-                                    </div>
+                            </div> 
+                        </div>       
+                    </li>
+                    <li class="team-acco__item active">
+                        <div class="team-acco__title">
+                            Ричард Джеймс
+                        </div>  
+                        <div class="team-acco__content">
+                            <div class="team-acco__image">
+                                <div class="team-acco__avatar">
+                                    <img src="img/avatar.png" alt="" class="team-acco__avatar-pic">
                                 </div>
-                                <div class="team-acco__desc">
-                                    <div class="team-acco__occ">
-                                        Оператор
-                                    </div>
-                                    <div class="team-acco__desc-text">
-                                        <p>
-                                        С радостью поможет подобрать идеальный бургер и оформить заказ.
-                                        </p>
-                                    </div>
-                                </div> 
-                            </div>       
-                        </li>
-                    </ul>           
-                </div>   
+                            </div>
+                            <div class="team-acco__desc">
+                                <div class="team-acco__occ">
+                                    Оператор
+                                </div>
+                                <div class="team-acco__desc-text">
+                                    С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                </div>
+                            </div> 
+                        </div>       
+                    </li>
+                    <li class="team-acco__item">
+                        <div class="team-acco__title">
+                            Джейк Финн
+                        </div>  
+                        <div class="team-acco__content">
+                            <div class="team-acco__image">
+                                <div class="team-acco__avatar">
+                                    <img src="img/avatar.png" alt="" class="team-acco__avatar-pic">
+                                </div>
+                            </div>
+                            <div class="team-acco__desc">
+                                <div class="team-acco__occ">
+                                    Оператор
+                                </div>
+                                <div class="team-acco__desc-text">
+                                    С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                </div>
+                            </div> 
+                        </div>       
+                    </li>
+                    <li class="team-acco__item">
+                        <div class="team-acco__title">
+                            Николай Иванов
+                        </div>  
+                        <div class="team-acco__content">
+                            <div class="team-acco__image">
+                                <div class="team-acco__avatar">
+                                    <img src="img/avatar.png" alt="" class="team-acco__avatar-pic">
+                                </div>
+                            </div>
+                            <div class="team-acco__desc">
+                                <div class="team-acco__occ">
+                                    Оператор
+                                </div>
+                                <div class="team-acco__desc-text">
+                                    С радостью поможет подобрать идеальный бургер и оформить заказ.
+                                </div>
+                            </div> 
+                        </div>       
+                    </li>
+                </ul>           
+            </div>   
         </section> 
     <!-- Секция "Меню"-->
         <section class="menu">
@@ -385,60 +429,60 @@
         </section> 
     <!-- Секция "Форма доставки" -->
         <section class="form">
-            <h1 class="form-title">
+            <h1 class="form__title">
                 Закажите доставку
             </h1>
             <form class="form-feedback">
                 <div class="form-left">
-                    <div class="name-phone">
-                        <div class="form-name">
+                    <div class="form-left__name-phone">
+                        <div class="form-left__name-phone-name">
                             <label>Имя</label>
                             <input type="text" name="name" value="">
                         </div>
-                        <div class="form-name">
+                        <div class="form-left__name-phone-phone">
                             <label>Телефон</label>
                         <input type="tel" name="tel" value="">  
                         </div>
                     </div>
-                    <div class="street">
+                    <div class="form-left__street">
                         <label>Улица</label>
                         <input type="text" name="street" value="" class="input-street">
                     </div>
-                    <div class="inform-house">
-                        <div class="house">
+                    <div class="form-left__house">
+                        <div class="form-left__house-inform">
                             <label>Дом</label>
                             <input type="text" name="house" value="">
                         </div>
-                        <div class="house">
+                        <div class="form-left__house-inform">
                             <label>Корпус</label>
                             <input type="text" name="corp" value="">
                         </div>
-                        <div class="house">
+                        <div class="form-left__house-inform">
                             <label>Квартира</label>
                             <input type="text" name="flat" value="">
                         </div>
-                        <div class="house">
+                        <div class="form-left__house-inform">
                             <label>Этаж</label>
                             <input type="text" name="floor" value=""> 
                         </div>   
                     </div>
                 </div>
                 <div class="form-right">
-                    <div class="comment">
+                    <div class="form-right__comment">
                         <label>Комментарий</label>
                         <textarea name="comment"></textarea>
                     </div>
-                    <div class="radio">
+                    <div class="form-right__radio">
                         <input type="radio" name="gr1" value="" class="radio_check">
                         <label class="radio-text">Потребуется сдача</label>
                         <input type="radio" name="gr1" value="" class="radio_check" checked>
                         <label class="radio-text">Оплата по карте</label>
                     </div>
-                    <div class="checkbox">
+                    <div class="form-right__checkbox">
                         <input type="checkbox" name="gr1" value="" checked>
                         <label class="checkbox-text">Не перезванивать</label>
                     </div>
-                    <div class="buttons-form">
+                    <div class="form-right__buttons-form">
                         <input type="submit" value="Заказать">
                         <input type="reset" value="Очистить">
                     </div>
@@ -447,32 +491,42 @@
         </section>     
     <!-- Секция "Контакты" -->
         <section class="contacts">
-            <div class="map">
+            <div class="contacts__map">
                 <!-- <img src="img/map.png"> -->
             </div>
              <footer class="footer">
-                <div class="contact-text">
-                    <p class="contact-text__address">Санкт-Петербург, ул. Бабушкина, д. 12/1, 15</p>
-                    <div class="wrap">
-                        <svg class="icon-phone">
+                <div class="contact-inform">
+                    <p class="contact-inform__address">Санкт-Петербург, ул. Бабушкина, д. 12/1, 15</p>
+                    <div class="contact-inform__wrap">
+                        <a href="tel:+79818169862">
+                        <svg class="contact-inform__icon-phone">
                             <use xlink:href="sprite/sprite.svg#phone"></use>
                         </svg>
-                    <p class="contact-text__phone">+7 (812) 377-13-77</p>  
+                        </a>
+                    <p class="contact-inform__number">+7 (812) 377-13-77</p>  
                     </div>
                 </div>
                 <div class="icons">
-                    <svg class="icon-social">
-                        <use xlink:href="sprite/sprite.svg#vk"></use>
-                    </svg>
-                    <svg class="icon-social">
-                        <use xlink:href="sprite/sprite.svg#fb"></use>
-                    </svg>
-                    <svg class="icon-social">
-                        <use xlink:href="sprite/sprite.svg#inst"></use>
-                    </svg>
-                    <svg class="icon-social">
-                        <use xlink:href="sprite/sprite.svg#twitter"></use>
-                    </svg>
+                    <a href="http://vk.com">
+                        <svg class="icons__icon-social">
+                            <use xlink:href="sprite/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="http://facebook.com">
+                        <svg class="icons__icon-social">
+                            <use xlink:href="sprite/sprite.svg#fb"></use>
+                        </svg>
+                    </a>
+                    <a href="http://instagram.com">
+                        <svg class="icons__icon-social">
+                            <use xlink:href="sprite/sprite.svg#inst"></use>
+                        </svg>
+                    </a>
+                    <a href="http://twitter.com">
+                        <svg class="icons__icon-social">
+                            <use xlink:href="sprite/sprite.svg#twitter"></use>
+                        </svg>
+                    </a>
                 </div>
             </footer> 
         </section>    

@@ -10,7 +10,7 @@
     flex-flow: row wrap;
     overflow-x: hidden;
 }
-.form-title {
+.form__title {
     font-family: Gagalin-Regular;
     font-size: rem(72px);
     color: $yellow;
@@ -29,21 +29,6 @@
         text-align: center;
         margin-top: rem(30px);
         font-size: rem(56px);
-    }
-}
-.form-feedback {
-    width: 75%;
-    display: flex;
-    justify-content: center;
-
-    @include tablets {
-        flex-direction: column;
-        margin-bottom: rem(40px);
-    }
-
-    @include phones {
-        width: 98%;
-        margin-top: rem(30px);
     }
 }
 label {

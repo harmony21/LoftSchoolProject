@@ -5,7 +5,7 @@
         width: 100%;
     }
 }
-.comment {
+.form-right__comment {
     display: flex;
     flex-direction: column;
     padding: rem(5px) rem(25px); 
@@ -19,7 +19,7 @@ textarea {
     border-radius: rem(5px); 
     height: rem(120px);
 }
-.radio {
+.form-right__radio {
     padding: 0 rem(25px);
     display: flex;
     justify-content: flex-start;
@@ -34,7 +34,7 @@ textarea {
         justify-content: center;
     }
 }
-.checkbox {
+.form-right__checkbox {
     display: flex;
     align-items: center;
     padding: 0 rem(25px);
@@ -47,7 +47,7 @@ textarea {
         justify-content: center;
     }
 }
-.buttons-form {
+.form-right__buttons-form {
     padding: rem(5px) rem(25px);
 
     @include phones {
@@ -65,7 +65,7 @@ input[type="submit"] {
     font-size: rem(13px);
     text-transform: uppercase;
     &:hover {
-        text-decoration: underline;
+        background-color: #c1401e; 
         cursor: pointer;
     }
 }

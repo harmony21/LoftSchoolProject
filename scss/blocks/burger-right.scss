@@ -1,0 +1,64 @@
+.burger-right {
+    padding: rem(20px) rem(60px) rem(20px) rem(20px);
+
+    @include tablets {
+        text-align: center;
+        padding: 0;
+    }
+}
+.burger-right__title {
+    width: rem(400px);
+
+    @include tablets {
+        margin: auto;
+    }
+}
+.burger-right__title-text {
+    color: $white;
+    font-family: Gagalin-Regular;
+    font-size: rem(72px);
+    font-weight: lighter;
+    margin: 0;
+
+    @include tablets {
+        font-size: rem(56px);
+        margin-bottom: rem(10px);
+    }
+}
+.burger-right__desc {
+    font-family: Ubuntu-Light;
+    color: $white;
+    font-size: rem(14px);
+    line-height: 1.9;
+    width: rem(480px);
+
+    @include tablets {
+        width: 100%;
+        margin-bottom: rem(20px);
+    }
+}
+.burger-right__price {
+    display: flex;
+    align-items: baseline;
+    font-family: Gagalin-Regular;
+    color: $orange;
+    margin-top: rem(-40px);
+
+    @include tablets {
+        justify-content: center;
+    }
+}
+.price {
+    font-size: rem(72px);
+    font-weight: lighter;
+
+    @include tablets {
+        font-size: rem(60px);
+    }
+}
+.rubles {
+    font-size: rem(35px);
+    font-weight: lighter;
+    margin-left: rem(10px);
+    margin-right: rem(50px);
+}

@@ -1,0 +1,16 @@
+.header {
+    height: rem(90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 rem(25px);
+    }
+} 
+.header__logo {
+    display: flex;
+    align-items: center;
+}

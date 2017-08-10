@@ -1,0 +1,19 @@
+.burgers {
+    background: linear-gradient(to top, #f9b43b, #f6ad3b,
+    #ec9039, #eb8d38, #ec9139, #ee9539, #f09a39,  
+    #f6ad3b, #f8b23b);
+    background-size: cover;  
+    height: 100vh; 
+    min-height: $min-height; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+.container {
+    width: 98%;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}

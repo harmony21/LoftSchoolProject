@@ -1,0 +1,8 @@
+.arrow-left {
+    display: flex;
+    align-items: center;
+}
+.arrow-left__pic {
+    height: rem(20px);
+    transform: rotate(90deg);
+}

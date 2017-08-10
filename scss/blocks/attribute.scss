@@ -1,0 +1,9 @@
+.attribute {
+    display: flex;
+    justify-content: center;
+
+    @include phones {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
