@@ -19,14 +19,7 @@
     }
 }
 .hamburger-menu__link {
-	vertical-align: middle;
-	position: relative;
-	height: rem(25px);
-	align-items: center;
     margin-left: rem(30px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     display: none;
     background: none;
     border: none;
@@ -37,9 +30,3 @@
         display: flex;
     }
 }
-.hamburger-menu__link-bars {
-	background: $white;
-	width: rem(24px);
-	height: rem(5px);
-    border-radius: rem(3px);
- }

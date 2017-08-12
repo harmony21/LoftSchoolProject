@@ -41,6 +41,7 @@
     height: rem(15px);
     margin-left: rem(80px);
     fill: $orange;
+    margin-right: rem(10px);
 
     @include tablets {
         margin-left: rem(24px);
@@ -52,5 +53,5 @@
     color: $orange;
     font-size: rem(14px);
     font-weight: bold;
-    margin-left: rem(10px);
+    text-decoration: none;
 }

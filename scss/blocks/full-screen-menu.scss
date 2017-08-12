@@ -1,0 +1,50 @@
+.full-screen {
+    display: none;
+
+    @include tablets {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $grey;
+    opacity: 0.99;
+    }
+}
+.full-screen__head {
+    @include tablets {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(10px) rem(42px) 0 rem(32px);
+    }
+}
+.full-screen__menu {
+   @include tablets {
+       list-style: none;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+
+}
+.full-screen__menu-item {
+    display: block;
+    font-family: Ubuntu-Regular;
+    font-size: rem(24px);
+    text-transform: uppercase;
+    white-space: pre;
+    text-align: center;
+    line-height: 1.7;
+    &:after {
+            content: "\A\2022";
+            color: $white;
+    }
+}
+.full-screen__menu-item:last-child::after {
+    content: "";
+}
+.full-screen__menu-link {
+    text-decoration: none;
+    color: $white;
+}

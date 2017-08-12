@@ -15,11 +15,12 @@ $phones: rem(480px);
 //blocks
 @import "blocks/main-screen";
 @import "blocks/header";
-@import "blocks/nav";
+@import "blocks/header__nav";
 @import "blocks/btn";
 @import "blocks/fixed-menu";
 @import "blocks/main-content";
 @import "blocks/arrow";
+@import "blocks/full-screen-menu";
 
 @import "blocks/advantages";
 @import "blocks/attribute";

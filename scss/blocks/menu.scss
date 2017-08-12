@@ -6,10 +6,13 @@
     position: relative;
     overflow-x: hidden;
 }
-.menu-title {
-	margin: 0;
-	padding-top: rem(40px);
-    padding-left: rem(220px); 
+.menu__title {
+	margin-top: rem(80px);
+    margin-left: rem(220px); 
+    font-family: Gagalin-Regular;
+    color: $white; 
+    font-size: rem(72px);
+    font-weight: lighter;
 
     @include tablets {
         padding-left: rem(50px);
@@ -18,10 +21,4 @@
     @include phones {
         padding-top: 0;
     }
-}
-.menu-title__name {
-    font-family: Gagalin-Regular;
-    color: $white; 
-    font-size: rem(72px);
-    font-weight: lighter;
 }

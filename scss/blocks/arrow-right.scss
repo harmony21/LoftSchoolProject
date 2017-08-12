@@ -1,8 +1,13 @@
 .arrow-right {
     display: flex;
-    align-items: center;
-}
-.arrow-right__pic {
     height: rem(20px);
     transform: rotate(-90deg);
+    margin: auto 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    @include phones {
+        margin-left: rem(-40px);
+    }
 }

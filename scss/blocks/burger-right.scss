@@ -42,13 +42,12 @@
     align-items: baseline;
     font-family: Gagalin-Regular;
     color: $orange;
-    margin-top: rem(-40px);
 
     @include tablets {
         justify-content: center;
     }
 }
-.price {
+.burger-right__price-number {
     font-size: rem(72px);
     font-weight: lighter;
 
@@ -56,7 +55,7 @@
         font-size: rem(60px);
     }
 }
-.rubles {
+.burger-right__price-rubles {
     font-size: rem(35px);
     font-weight: lighter;
     margin-left: rem(10px);
