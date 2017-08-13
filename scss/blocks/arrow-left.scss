@@ -1,7 +1,7 @@
 .arrow-left {
-    display: flex;
-    margin: auto 0;
-    height: rem(20px);
+    position: absolute;
+    margin: auto;
+    bottom: 50%;
     transform: rotate(90deg);
     background: none;
     border: none;

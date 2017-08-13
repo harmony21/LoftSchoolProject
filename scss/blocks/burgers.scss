@@ -10,11 +10,13 @@
     align-items: center; 
     flex-direction: column;
     overflow-x: hidden;
+    position: relative;
 }
 .burgers__container {
     width: 98%;
 }
 .burgers__wrapper {
+    width: 98%;
     display: flex;
     justify-content: space-between;
 }

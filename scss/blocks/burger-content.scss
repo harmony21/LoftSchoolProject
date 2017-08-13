@@ -1,5 +1,6 @@
 .burger-content {
     display: flex;
+    margin: auto;
 
     @include tablets {
         flex-direction: column;

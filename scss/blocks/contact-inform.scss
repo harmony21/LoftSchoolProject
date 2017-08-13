@@ -24,6 +24,7 @@
     @include phones {
         justify-content: center;
         margin-top: rem(15px);
+        margin-left: 0;
     }
 }
 .contact-inform__wrap {
@@ -45,6 +46,10 @@
 
     @include tablets {
         margin-left: rem(24px);
+    }
+
+    @include phones {
+        margin-left: 0;
     }
 }
 .contact-inform__number {

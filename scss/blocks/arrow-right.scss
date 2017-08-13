@@ -1,13 +1,13 @@
 .arrow-right {
-    display: flex;
-    height: rem(20px);
+    position: absolute;
+    right: 1%;
+    bottom: 50%;
     transform: rotate(-90deg);
-    margin: auto 0;
     background: none;
     border: none;
     cursor: pointer;
 
     @include phones {
-        margin-left: rem(-40px);
+    // margin-left: rem(-40px);
     }
 }
