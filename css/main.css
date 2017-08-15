@@ -686,7 +686,7 @@
   @media screen and (max-width: 20rem) {
     .burger-left__composition {
       margin-left: 0.625rem;
-      margin-top: -5.625rem; } }
+      margin-top: -3.125rem; } }
 
 .burger-left__composition-link {
   text-decoration: none; }
@@ -735,7 +735,7 @@
     .burger-left__composition-wrap {
       width: 11.5625rem;
       height: 15.625rem;
-      margin-top: 0.6875rem;
+      margin-top: 3.125rem;
       margin-left: 2.3125rem;
       padding-left: 0.9375rem; } }
 
@@ -833,7 +833,7 @@
     .burger-left__calories {
       margin: 0.625rem;
       margin-left: 14.5rem;
-      margin-top: -5rem; } }
+      margin-top: -2.5rem; } }
 
 .burger-left__calories-title {
   color: #fff;

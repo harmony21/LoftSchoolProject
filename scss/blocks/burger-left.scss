@@ -38,7 +38,8 @@
 
     @include mini-phones {
         margin-left: rem(10px);
-        margin-top: rem(-90px); 
+        margin-top: rem(-50px);
+        // margin-top: rem(-90px); 
     }
 }
 .burger-left__composition-link {
@@ -82,7 +83,8 @@
     @include mini-phones {
     width: rem(185px);
     height: rem(250px);
-    margin-top: rem(11px);
+    margin-top: rem(50px);
+    // margin-top: rem(11px);
     margin-left: rem(37px);
     padding-left: rem(15px);
     }
@@ -178,7 +180,8 @@
     @include mini-phones {
         margin: rem(10px); 
         margin-left: rem(232px); 
-        margin-top: rem(-80px);
+        margin-top: rem(-40px);
+        // margin-top: rem(-80px);
     }
 }
 .burger-left__calories-title {
