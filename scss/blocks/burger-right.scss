@@ -65,6 +65,10 @@
     @include tablets {
         justify-content: center;
     }
+
+    @include mini-phones {
+        margin-bottom: rem(25px);
+    }
 }
 .burger-right__price-number {
     font-size: rem(72px);

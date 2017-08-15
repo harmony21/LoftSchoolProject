@@ -330,8 +330,8 @@
       bottom: 0;
       right: 0;
       left: 0;
-      height: 100vh;
-      background-color: #585858;
+      min-height: 100vh;
+      background: #585858;
       opacity: 0.99; } }
 
 @media screen and (max-width: 48rem) {
@@ -686,7 +686,7 @@
   @media screen and (max-width: 20rem) {
     .burger-left__composition {
       margin-left: 0.625rem;
-      margin-top: -7.5rem; } }
+      margin-top: -5.625rem; } }
 
 .burger-left__composition-link {
   text-decoration: none; }
@@ -735,8 +735,8 @@
     .burger-left__composition-wrap {
       width: 11.5625rem;
       height: 15.625rem;
-      margin-top: -1.125rem;
-      margin-left: 2.375rem;
+      margin-top: 0.6875rem;
+      margin-left: 2.3125rem;
       padding-left: 0.9375rem; } }
 
 .burger-left__composition-list {
@@ -832,8 +832,8 @@
   @media screen and (max-width: 20rem) {
     .burger-left__calories {
       margin: 0.625rem;
-      margin-left: 14.375rem;
-      margin-top: -6.875rem; } }
+      margin-left: 14.5rem;
+      margin-top: -5rem; } }
 
 .burger-left__calories-title {
   color: #fff;
@@ -919,6 +919,9 @@ text {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; } }
+  @media screen and (max-width: 20rem) {
+    .burger-right__price {
+      margin-bottom: 1.5625rem; } }
 
 .burger-right__price-number {
   font-size: 4.5rem;

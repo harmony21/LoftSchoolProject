@@ -7,8 +7,8 @@
     bottom: 0;
     right: 0;
     left: 0;
-    height: 100vh;
-    background-color: $grey;
+    min-height: 100vh; 
+    background: $grey;
     opacity: 0.99;
     }
 }
