@@ -13,4 +13,9 @@
 .header__logo {
     display: flex;
     align-items: center;
+
+    @include mini-phones {
+    margin-left: rem(-20px);
+    margin-right: rem(20px);
+    }
 }

@@ -1,8 +1,7 @@
 .contacts {
     background: url(..//img/map.png) center center no-repeat;
     background-size: cover;   
-    height:100vh; 
-    min-height: $min-height;
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

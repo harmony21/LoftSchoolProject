@@ -8,23 +8,31 @@
 	right: 0;
 }
 .menu-acco__item {
-	display: flex;
+    display: flex;
 } 
 .menu-acco__item_active .menu-acco__desc {
     display: block;
 }
+
+
 .menu-acco__title {
      width: rem(80px);
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     min-height: $min-height;
-     height: 100vh;
+     min-height: 100vh;
+     &:hover {
+         cursor: pointer;
+     }
 
     @include tablets {
          width: rem(60px);
          justify-content: flex-end;
+    }
+
+    @include mini-phones {
+         width: rem(60px);
     }
 }
 @each $type in (meat, veg, diet) {
@@ -43,22 +51,43 @@
     margin: 0;
     display: none;
     width: rem(545px); 
-    min-height: $min-height;
-    height: 100vh;  
+    min-height: 100vh;  
     background-color: $grey;
     opacity: 0.9;
+
 
     @include tablets {
         width: rem(572px); 
     }
     
     @include phones {
-        width: rem(283px); 
+        width: rem(403px);
+        position: relative;
+        margin-right: rem(-120px);
+        z-index: 5;
         line-height: 1.6;
         font-size: rem(13px);
         padding: rem(45px) rem(30px);    
     }
+
+    @include mini-phones {
+        width: rem(243px);
+    }
  }
+.menu-acco__close {
+    display: none;
+
+    @include phones {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: rem(20px);
+    margin-top: rem(20px);
+    z-index: 8;
+    }
+}
 .menu-acco__link {
 	font-family: Gagalin-Regular;
 	font-size: rem(40px);
@@ -72,5 +101,10 @@
     @include tablets {
         font-size: rem(35px);
         margin-bottom: 160px;
+    }
+
+    @include mini-phones {
+        font-size: rem(28px);
+        font-weight: lighter;
     }
 }

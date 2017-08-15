@@ -9,4 +9,8 @@
     @include tablets {
         margin-top: 0;
     }
+
+    @include mini-phones {
+        margin-bottom: rem(20px);
+    }
 }

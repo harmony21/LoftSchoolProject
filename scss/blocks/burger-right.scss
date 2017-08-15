@@ -5,6 +5,10 @@
         text-align: center;
         padding: 0;
     }
+
+    @include mini-phones {
+        width: rem(310px);
+    }
 }
 .burger-right__title {
     width: rem(400px);
@@ -23,6 +27,12 @@
     @include phones {
          font-size: rem(50px);
     }
+
+    @include mini-phones {
+         width: rem(310px);
+         font-size: rem(40px);
+         
+    }
 }
 .burger-right__desc {
     font-family: Ubuntu-Light;
@@ -39,6 +49,11 @@
         width: 80%;
         line-height: 1.7;
         margin: rem(20px) auto;
+    }
+
+    @include mini-phones {
+        font-size: rem(13px);
+        line-height: 1.5;
     }
 }
 .burger-right__price {
@@ -62,6 +77,10 @@
     @include phones {
         font-size: rem(50px);
     }
+
+    @include mini-phones {
+        font-size: rem(40px);
+    }
 }
 .burger-right__price-rubles {
     font-size: rem(35px);
@@ -71,5 +90,10 @@
 
     @include phones {
         font-size: rem(30px);
+    }
+
+    @include mini-phones {
+        font-size: rem(20px);
+        margin-right: rem(20px);
     }
 }

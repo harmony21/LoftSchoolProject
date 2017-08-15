@@ -1,8 +1,7 @@
 .menu {
-	height: 100vh;
+    min-height: 100vh; 
 	background-image: url(../img/burger-menu.png);
 	background-size: cover;
-    min-height: $min-height;
     position: relative;
     overflow-x: hidden;
 }
@@ -14,11 +13,13 @@
     font-size: rem(72px);
     font-weight: lighter;
 
-    @include tablets {
-        padding-left: rem(50px);
+    @include phones {
+    margin-left: rem(50px);
     }
 
-    @include phones {
-        padding-top: 0;
+    @include mini-phones {
+    font-size: rem(44px);
+    margin-left: rem(10px);
+    margin-top: rem(20px);
     }
 }

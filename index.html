@@ -146,13 +146,56 @@
                         </div>
                         <div class="burger-left__composition">
                             <a class="burger-left__composition-link" href="#">
-                                <svg class="burger-left__composition-svg">
+                                 <svg class="burger-left__composition-svg">
                                     <use xlink:href="sprite/sprite.svg#burger"></use> 
-                                </svg>
+                                </svg> 
                                 <h1 class="burger-left__composition-title">Состав</h1>
                             </a>
                         </div>
-                        <div class="burger-left__calories">
+                        <div class="burger-left__composition-wrap">
+                            <ul class="burger-left__composition-list">
+                                <li class="burger-left__composition-item">
+                                    <svg class="burger-left__composition-item-svg beef">
+                                        <use xlink:href="sprite/sprite.svg#beef"></use> 
+                                    </svg>
+                                    Говядина <span class="weight-right">300 г</span>
+                                </li>
+                                <li class="burger-left__composition-item">
+                                    <svg class="burger-left__composition-item-svg buns">
+                                        <use xlink:href="sprite/sprite.svg#buns"></use> 
+                                    </svg>
+                                    Булочки <span class="weight-right">100 г</span>
+                                </li>
+                                <li class="burger-left__composition-item">
+                                    <svg class="burger-left__composition-item-svg salad">
+                                        <use xlink:href="sprite/sprite.svg#salad"></use> 
+                                    </svg class="burger-left__composition-item-svg">
+                                    Зелень <span class="weight-right">70 г</span>
+                                </li>
+                                <li class="burger-left__composition-item">
+                                    <svg class="burger-left__composition-item-svg sauce">
+                                        <use xlink:href="sprite/sprite.svg#sauce"></use> 
+                                    </svg>
+                                    Соус <span class="weight-right">150 г</span>
+                                </li>
+                                <li class="burger-left__composition-item">
+                                    <svg class="burger-left__composition-item-svg cucumber">
+                                        <use xlink:href="sprite/sprite.svg#cucumber"></use> 
+                                    </svg>
+                                    Овощи <span class="weight-right">200 г</span>
+                                </li>
+                                <li class="burger-left__composition-item">
+                                    <svg class="burger-left__composition-item-svg cheese">
+                                        <use xlink:href="sprite/sprite.svg#cheese"></use> 
+                                    </svg>
+                                    Сыр <span class="weight-right">80 г</span>
+                                </li>
+                            </ul>
+                            <button class="burger-left__composition-close">
+                                <img src="img/orange-close.svg">  
+                            </button>
+                            </div>
+                            <div class="burger-left__calories">
                             <svg class="burger-left__calories-svg">
                                     <use xlink:href="sprite/sprite.svg#kkal"></use> 
                                     <text x="13" y="50">1200</text>
@@ -216,7 +259,7 @@
                             </div> 
                         </div>       
                     </li>
-                    <li class="team-acco__item active">
+                    <li class="team-acco__item">
                         <div class="team-acco__title">
                             Ричард Джеймс
                         </div>  
@@ -294,10 +337,9 @@
                     Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. 
                     Модальность высказывания, как справедливо считает И. Гальперин, пространственно выбирает метр.
                     Речевой акт редуцирует диалектический характер. 
-                    Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
-                    Лирический субъект начинает диссонансный анжамбеман. 
-                    Наш современник стал особенно чутко относиться к слову.
-				    </p>
+                    <img src="img/close.svg" alt="" class="menu-acco__close">
+                    </p>
+                    
 			    </li>
 			    <li class="menu-acco__item">
 				    <div class="menu-acco__title menu-acco__title_veg">
@@ -536,5 +578,8 @@
             </footer> 
         </section>    
     <script src="js/full-screen-menu.js"></script>
+    <script src="js/vertical-acco.js"></script>
+    <script src="js/composition.js"></script>
+    <!-- <script src="js/horizontal-acco.js"></script> -->
     </body>
 </html>

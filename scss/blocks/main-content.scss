@@ -29,6 +29,13 @@
         position: absolute;
         margin-left: rem(-150px);
     }
+
+    @include mini-phones {
+        width: rem(280px);
+        height: rem(280px);
+        margin-top: rem(-30px);
+        margin-left: rem(-130px);
+    }
 }
 .main-content__main-text {
     display: flex;
@@ -38,6 +45,10 @@
     
     @include tablets {
         margin-top: rem(250px);
+    }
+
+    @include mini-phones {
+        margin-top: rem(220px);
     }
 }
 .main-content__main-text-title-name { 

@@ -20,7 +20,7 @@
     margin-top: rem(-200px);
     margin-left: rem(150px);
     background-color: #f08c33;
-    &:hover {
+    &.active {
         background-color: $orange;
     }
 
@@ -35,6 +35,11 @@
         margin-top: rem(-100px);
         padding: rem(2px) rem(10px); 
     }
+
+    @include mini-phones {
+        margin-left: rem(10px);
+        margin-top: rem(-120px); 
+    }
 }
 .burger-left__composition-link {
     text-decoration: none;
@@ -47,6 +52,112 @@
     text-align: center;
     margin: 0;
 }
+.burger-left__composition-wrap {
+    width: rem(260px);
+    height: rem(312px);
+    background-color: $white;
+    position: absolute;
+    opacity: 0.95;
+    margin-left: rem(25px);
+    margin-top: rem(-75px);
+    border-radius: rem(5px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    padding: rem(20px);
+    z-index: 10;
+    display: none;
+
+    @include tablets {
+    margin-top: rem(6px);
+    margin-left: rem(18px);
+    padding-right: 0;
+    }
+
+    @include phones {
+    margin-top: rem(33px);
+    margin-left: rem(48px);
+    }
+
+    @include mini-phones {
+    width: rem(185px);
+    height: rem(250px);
+    margin-top: rem(-18px);
+    margin-left: rem(38px);
+    padding-left: rem(15px);
+    }
+}
+.burger-left__composition-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.burger-left__composition-item {
+    font-family: Ubuntu-Medium;
+    font-size: rem(14px);
+    color: $grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: rem(15px); 
+
+    @include mini-phones {
+    font-size: rem(12px);
+    }
+}
+.beef, .sauce {
+    fill: $orange;
+}
+.buns, .cheese {
+    fill: $yellow;
+}
+.salad, .cucumber {
+    fill: $green;
+}
+.burger-left__composition-item-svg {
+    width: rem(40px);
+    height: rem(40px);
+    margin-right: rem(25px);
+    display: flex;
+
+    @include mini-phones {
+    width: rem(30px);
+    height: rem(30px);
+    margin-right: rem(15px);
+    }
+}
+.weight-right {
+    right: rem(20px);
+    position: absolute;
+    margin-top: rem(-15px);
+
+    @include tablets {
+    right: rem(50px);
+    }
+
+    @include mini-phones {
+    right: rem(30px);
+    margin-top: rem(-12px);
+    }
+}
+.burger-left__composition-close {
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    @include tablets {
+        display: block;
+        margin-top: rem(-335px);
+        margin-left: rem(220px);
+    }
+
+    @include mini-phones {
+        margin-top: rem(-285px);
+        margin-left: rem(155px);
+    }
+}
+
 .burger-left__calories {
     position: absolute;
     left: 0;
@@ -62,6 +173,12 @@
         margin: rem(10px); 
         margin-left: rem(320px); 
         margin-top: rem(-90px);
+    }
+
+    @include mini-phones {
+        margin: rem(10px); 
+        margin-left: rem(230px); 
+        margin-top: rem(-110px);
     }
 }
 .burger-left__calories-title {
