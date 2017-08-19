@@ -1,4 +1,4 @@
-$(".main").onepage_scroll({
+$(".main").onepage_scroll ({
    sectionContainer: "section",     
    easing: "ease",                                                  
    animationTime: 1000,             
@@ -8,6 +8,7 @@ $(".main").onepage_scroll({
    afterMove: function(index) {},   
    loop: false,                     
    keyboard: true,                  
-   responsiveFallback: false,                                                   
+   responsiveFallback: 600,                                                   
    direction: "vertical"              
 });
+

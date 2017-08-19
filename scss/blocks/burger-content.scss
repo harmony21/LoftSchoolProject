@@ -1,5 +1,6 @@
 .burger-content {
     display: flex;
+    align-items: center;
     margin: auto;
 
     @include tablets {
