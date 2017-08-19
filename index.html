@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mr. Burger</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
-        <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">   
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" type="text/css" media="screen" /> 
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="shortcut icon" href="img/hamburger.png" type="image/x-icon">
     </head>
@@ -860,33 +860,33 @@
                     <div class="form-left__name-phone">
                         <div class="form-left__name-phone-name">
                             <label for="user-name">Имя</label>
-                            <input id="user-name" type="text" name="user-name">
+                            <input id="user-name" type="text" name="user-name" required="required" pattern="[A-Za-zА-Яа-яЁё]{,15}">
                         </div>
                         <div class="form-left__name-phone-phone">
                             <label for="user-phone">Телефон</label>
-                            <input id="user-phone" type="tel" name="user-phone">  
+                            <input id="user-phone" type="tel" name="user-phone" required="required">  
                         </div>
                     </div>
                     <div class="form-left__street">
                         <label for="user-street">Улица</label>
-                        <input id="user-street" type="text" name="user-street" class="input-street">
+                        <input id="user-street" type="text" name="user-street" class="input-street" required="required" pattern="[A-Za-zА-Яа-яЁё]{,25}">
                     </div>
                     <div class="form-left__house">
                         <div class="form-left__house-inform">
                             <label for="user-house">Дом</label>
-                            <input id="user-house" type="text" name="user-house">
+                            <input id="user-house" type="text" name="user-house" required="required" pattern="[0-9]{,3}">
                         </div>
                         <div class="form-left__house-inform">
                             <label for="user-corp">Корпус</label>
-                            <input id="user-corp" type="text" name="user-corp">
+                            <input id="user-corp" type="text" name="user-corp" pattern="[0-9]{,3}">
                         </div>
                         <div class="form-left__house-inform">
                             <label for="user-flat">Квартира</label>
-                            <input id="user-flat" type="text" name="user-flat">
+                            <input id="user-flat" type="text" name="user-flat" required="required" pattern="[0-9]{,3}">
                         </div>
                         <div class="form-left__house-inform">
                             <label for="user-floor">Этаж</label>
-                            <input id="user-floor" type="text" name="user-floor"> 
+                            <input id="user-floor" type="text" name="user-floor" pattern="[0-9]{,3}"> 
                         </div>   
                     </div>
                 </div>
@@ -906,10 +906,10 @@
                         <label for="dont-disturb" class="checkbox-text">Не перезванивать</label>
                     </div>
                     <div class="form-right__buttons-form">
-                        <input type="submit" value="Заказать" data-fancybox data-src="#test-popup">
+                        <input type="submit" class="submit" value="Заказать"  data-src="#test-popup">
                         <div class="form-modal" id="test-popup">
                             <p class="form-modal__desc">Сообщение отправлено</p>
-                            <button class="btn__link" href="#">Закрыть</button>
+                            <button class="btn__link btn__link-close">Закрыть</button>
                         </div>
                         <input type="reset" value="Очистить">
                     </div>
@@ -957,15 +957,16 @@
         </section> 
     </div>      
     <script src="js/jquery-3.2.1.js"></script>
-     <script src="js/jquery.fancybox.min.js"></script>  
+       <script src="js/jquery.fancybox.min.js"></script>    
     <script src="/js/jquery.bxslider.min.js"></script>
-    <script src="/js/jquery.onepage-scroll.min.js"></script>
+    <script src="/js/jquery.onepage-scroll.min.js"></script>   
+    <script src="/js/mask-input.js"></script>
     <script src="js/full-screen-menu.js"></script>
     <script src="js/vertical-acco.js"></script>
     <script src="js/composition.js"></script>
     <script src="js/horizontal-acco.js"></script>
-     <script src="js/modal-reviews.js"></script>  
-      <script src="js/modal-form.js"></script>   
+    <script src="js/modal-reviews.js"></script>  
+    <script src="js/modal-form.js"></script>     
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/map.js"></script> 
     <script src="js/slider.js"></script> 

@@ -1,19 +1,16 @@
-//console.log('in common.js');
-//console.log($);
-
     var submitForm = function(ev) {
     ev.preventDefault();
-//    console.log('I am in sumbitForm');
     
     var form = $(ev.target);
     
     ajaxForm(form).done(function(msg) {
             var mes = msg.mes,
                 status = msg.status;
+
             if (status === 'OK') {
-                form.append('<p class="success">' + mes + '</p>');
+                $('.submit').click().fancybox({});
             } else {
-                form.append('<p class="error">' + mes + '</p>');
+                alert("Request failed: " + textStatus);
             }
         });
 }

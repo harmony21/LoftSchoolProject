@@ -1,6 +1,6 @@
 <?php 
 
-$name = $_POST['user-name'];
+    $name = $_POST['user-name'];
     $phone = $_POST['user-phone'];
     $street = $_POST['user-street'];
     $house = $_POST['user-house'];
@@ -36,7 +36,7 @@ $mail_message = '
     </html>
     ';
 
-   $headers = "From: Инна Ботвинник <angel-a210497@mail.ru>\r\n".
+   $headers = "From: Инна Ботвинник \r\n".
     "MIME-Version: 1.0" . "\r\n" .
     "Content-type: text/html; charset=UTF-8" . "\r\n";
 
@@ -53,5 +53,4 @@ $mail_message = '
     }
 
     echo json_encode($data);
-
 ?>
