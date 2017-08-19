@@ -2,6 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: rem(100px);
+
+    @include tablets {
+        margin-left: 0;
+    }
 }
 .burger-left__pic {
     @include tablets {
@@ -15,17 +20,17 @@
 .burger-left__composition {
     position: absolute;
     left: 0;
-    padding: rem(10px) rem(20px); 
+    padding: rem(8px) rem(15px); 
     border-radius: rem(7px);
     margin-top: rem(-200px);
     margin-left: rem(150px);
     background-color: #f08c33;
+    text-align: center;
     &.active {
         background-color: $orange;
     }
 
     @include tablets {
-    padding: rem(8px) rem(15px); 
     margin-top: rem(-120px);
     }
 
@@ -33,13 +38,13 @@
         left: 0;
         margin-left: rem(50px);
         margin-top: rem(-100px);
-        padding: rem(2px) rem(10px); 
     }
 
     @include mini-phones {
         margin-left: rem(10px);
-        margin-top: rem(-50px);
-        // margin-top: rem(-90px); 
+        padding: rem(5px) rem(10px); 
+        // margin-top: rem(-50px);
+        margin-top: rem(-90px); 
     }
 }
 .burger-left__composition-link {
@@ -49,8 +54,7 @@
     color: $white; 
     font-family: Gagalin-Regular;
     font-weight: lighter;
-    font-size: rem(18px);
-    text-align: center;
+    font-size: rem(16px);
     margin: 0;
 }
 .burger-left__composition-wrap {
@@ -59,8 +63,8 @@
     background-color: $white;
     position: absolute;
     opacity: 0.95;
-    margin-left: rem(25px);
-    margin-top: rem(-75px);
+    margin-left: rem(30px);
+    margin-top: rem(-66px);
     border-radius: rem(5px);
     display: flex;
     flex-wrap: wrap;
@@ -70,22 +74,21 @@
     display: none;
 
     @include tablets {
-    margin-top: rem(6px);
-    margin-left: rem(18px);
+    margin-top: rem(14px);
+    margin-left: rem(10px);
     padding-right: 0;
     }
 
     @include phones {
-    margin-top: rem(33px);
+    margin-top: rem(35px);
     margin-left: rem(48px);
     }
 
     @include mini-phones {
     width: rem(185px);
     height: rem(250px);
-    margin-top: rem(50px);
-    // margin-top: rem(11px);
-    margin-left: rem(37px);
+    margin-top: rem(21px);
+    margin-left: rem(34px);
     padding-left: rem(15px);
     }
 }
@@ -164,41 +167,50 @@
     position: absolute;
     left: 0;
     margin-left: rem(170px);
-    margin-top: rem(210px);
+    margin-top: rem(190px);
+    opacity: 0.5;
 
     @include tablets {
     margin-left: rem(510px);
-    margin-top: rem(-108px);
+    margin-top: rem(-125px);
     }
 
     @include phones {
         margin: rem(10px); 
         margin-left: rem(320px); 
-        margin-top: rem(-90px);
+        margin-top: rem(-105px);
     }
 
     @include mini-phones {
         margin: rem(10px); 
         margin-left: rem(232px); 
-        margin-top: rem(-55px);
-        // margin-top: rem(-80px);
+        margin-top: rem(-88px);
     }
 }
 .burger-left__calories-title {
     color: $white; 
     font-family: Gagalin-Regular;
     font-weight: lighter;
-    font-size: rem(8px);
+    font-size: rem(16px);
     text-align: center;
 }
 text {
     font-family: Gagalin-Regular;
     font-weight: lighter;
-    font-size: rem(24px);
+    font-size: rem(18px);
 }
-.burger-left__composition-svg,
+.burger-left__composition-svg {
+    width: rem(50px);
+    height: rem(50px);
+    fill: $white;
+
+    @include mini-phones {
+    width: rem(40px);
+    height: rem(40px);
+    }
+}
 .burger-left__calories-svg {
-    width: rem(65px);
-    height: rem(65px);
+    width: rem(50px);
+    height: rem(50px);
     fill: $white;
 }

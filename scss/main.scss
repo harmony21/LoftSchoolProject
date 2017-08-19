@@ -33,6 +33,7 @@ $mini-phones: rem(320px);
 @import "blocks/burger-left";
 @import "blocks/burger-right";
 @import "blocks/arrow-right";
+@import "blocks/slider";
 
 @import "blocks/team";
 @import "blocks/team-acco";
@@ -43,12 +44,14 @@ $mini-phones: rem(320px);
 @import "blocks/reviews";
 @import "blocks/photo-back";
 @import "blocks/review-style";
+@import "blocks/review-popup";
 @import "blocks/btn-more";
 
 @import "blocks/forms";
 @import "blocks/form-feedback";
 @import "blocks/form-left";
 @import "blocks/form-right";
+@import "blocks/form-modal";
 
 @import "blocks/contacts";
 @import "blocks/footer";

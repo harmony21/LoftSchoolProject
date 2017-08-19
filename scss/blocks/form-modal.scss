@@ -1,0 +1,15 @@
+.form-modal {
+    display: none;
+    border-radius: rem(10px);
+    text-align: center;
+}
+.form-modal__desc {
+    font-family: Ubuntu-Light;
+    font-size: rem(14px);
+    color: $black;
+    margin: 0;
+    margin-bottom: rem(20px);
+}
+.fancybox-close-small {
+    display: none;
+}

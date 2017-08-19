@@ -7,13 +7,18 @@
 	top: 0;
 	right: 0;
 }
+
 .menu-acco__item {
     display: flex;
-} 
-.menu-acco__item_active .menu-acco__desc {
-    display: block;
+    &.active {
+        .menu-acco__desc {
+            display: block;
+        }
+         .menu-acco__link {
+            color: $yellow;
+        }
+    }
 }
-
 
 .menu-acco__title {
      width: rem(80px);
@@ -24,7 +29,7 @@
      min-height: 100vh;
      &:hover {
          cursor: pointer;
-     }
+    }
 
     @include tablets {
          width: rem(60px);
@@ -55,7 +60,6 @@
     background-color: $grey;
     opacity: 0.9;
 
-
     @include tablets {
         width: rem(572px); 
     }
@@ -72,6 +76,7 @@
 
     @include mini-phones {
         width: rem(243px);
+        
     }
  }
 .menu-acco__close {

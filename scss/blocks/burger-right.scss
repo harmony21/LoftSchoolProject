@@ -1,9 +1,11 @@
 .burger-right {
+    width: 100%;
+    margin-left: rem(30px);
     padding: rem(20px) rem(60px) rem(20px) rem(20px);
-
     @include tablets {
         text-align: center;
         padding: 0;
+        margin-left: 0;
     }
 
     @include mini-phones {
@@ -11,7 +13,7 @@
     }
 }
 .burger-right__title {
-    width: rem(400px);
+    width: 70%;
     color: $white;
     font-family: Gagalin-Regular;
     font-size: rem(72px);
@@ -29,9 +31,7 @@
     }
 
     @include mini-phones {
-         width: rem(310px);
-         font-size: rem(40px);
-         
+         font-size: rem(35px);  
     }
 }
 .burger-right__desc {
@@ -39,14 +39,15 @@
     color: $white;
     font-size: rem(14px);
     line-height: 1.9;
-    width: rem(480px);
+    width: 90%;
 
     @include tablets {
+        margin: auto;
         margin-bottom: rem(20px);
+        width: 80%;
     }
 
     @include phones {
-        width: 80%;
         line-height: 1.7;
         margin: rem(20px) auto;
     }
@@ -59,8 +60,10 @@
 .burger-right__price {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
     font-family: Gagalin-Regular;
     color: $orange;
+    width: 100%;
 
     @include tablets {
         justify-content: center;
