@@ -37,7 +37,7 @@
     }
 
     @include mini-phones {
-         width: rem(60px);
+         width: rem(40px);
     }
 }
 @each $type in (meat, veg, diet) {
@@ -76,6 +76,7 @@
 
     @include mini-phones {
         width: rem(243px);
+        font-size: rem(12px);
         
     }
  }
@@ -109,7 +110,8 @@
     }
 
     @include mini-phones {
-        font-size: rem(28px);
+        font-size: rem(24px);
         font-weight: lighter;
+        margin-bottom: 180px;
     }
 }

@@ -1,9 +1,15 @@
 .btn-more {
-    padding: rem(10px) rem(10px);
+    padding: rem(10px) ;
     background-color: $dark-grey;
-    width:rem(90px);
+    width:rem(100px);
     border-radius:rem(6px);
     text-align:center;
+    border: none;
+    font-family: Ubuntu-Medium;
+    color: $white;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    cursor: pointer;
     &:hover {
         background-color: #1f2122;
     }
@@ -11,16 +17,6 @@
     @include tablets {
         margin: auto;
         padding: rem(8px) rem(8px);
-    }
-}
-.btn-more__link {
-    font-family: Ubuntu-Medium;
-    text-decoration: none;
-    color: $white;
-    font-size: rem(13px);
-    text-transform: uppercase;
-
-    @include tablets {
         font-size: rem(11px);
     }
 }

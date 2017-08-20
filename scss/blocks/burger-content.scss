@@ -7,4 +7,11 @@
         flex-direction: column;
         margin-top: rem(60px);
     }
+
+    @include phones {
+        margin-top: rem(80px);
+    }
+    @include mini-phones {
+        margin-top: rem(30px);
+    }
 }

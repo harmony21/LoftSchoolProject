@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: rem(-180px);
+    // margin-top: rem(-180px);
 
     @include tablets {
         margin-top: 0;
@@ -13,10 +13,10 @@
 }
 .team-acco__title {
     font-family: Gagalin-Regular;
-    font-size: rem(14px);
+    font-size: rem(18px);
     font-weight: lighter;
     color: $white;
-    margin-left: rem(25px);
+    // margin-left: rem(25px);
     display: flex;
     align-items: center;
     &:before {
@@ -39,9 +39,13 @@
         justify-content: center;
         margin-left: 0;
     }
+
+    @include mini-phones {
+        font-size: rem(18px);
+    }
 }
 .team-acco__item {
-    margin: rem(15px);
+    margin: rem(25px);
     &:hover {
         cursor: pointer;
     }
@@ -55,6 +59,10 @@
                 transform: rotate(180deg);
             }
         }
+    }
+
+    @include mini-phones {
+        margin: rem(10px);
     }
 }
 .team-acco__content {
@@ -80,6 +88,10 @@
         text-align: center;
         padding: 0;
     }
+
+    @include mini-phones {
+        font-size: rem(12px);
+    }
 }
 .team-acco__desc-text {
     display: flex;
@@ -103,6 +115,10 @@
         width: 80%;
         margin: auto;
     }
+
+    @include mini-phones {
+        font-size: rem(11px);
+    }
 }
 .team-acco__avatar {
     width: rem(100px);
@@ -115,6 +131,11 @@
 
     @include tablets {
         margin-left: 0;
+    }
+
+    @include mini-phones {
+        width: rem(80px);
+        height: rem(80px);
     }
 }
 .team-acco__avatar-pic {

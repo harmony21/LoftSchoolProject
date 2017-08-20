@@ -2,13 +2,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70%;
 
     @include tablets {
         flex-direction: column;
+        height: 60%;
     }
 }
 .main-content__burger-pic {
     display: flex;
+
+    @include tablets {
+        width: rem(320px);
+    }
+
+    @include mini-phones {
+        width: rem(200px);
+    }
+    
 }  
 .main-content__burger-pic-dropspic {
     position: absolute;
@@ -24,31 +35,35 @@
 
     @include tablets {
         width: rem(320px);
-        height: rem(320px);
-        margin-top: rem(-50px);
         position: absolute;
-        margin-left: rem(-150px);
+        margin: 0;
+        margin: auto;
+        margin-top: rem(-50px);
+    }
+
+    @include phones {
+        margin-top: rem(-100px);
+        
     }
 
     @include mini-phones {
-        width: rem(280px);
-        height: rem(280px);
-        margin-top: rem(-30px);
-        margin-left: rem(-130px);
+        width: rem(200px);
+        margin-top: rem(-80px);
+
     }
 }
 .main-content__main-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:rem(25px); 
+    margin-top:rem(40px); 
     
     @include tablets {
         margin-top: rem(250px);
     }
 
     @include mini-phones {
-        margin-top: rem(220px);
+        margin-top: rem(120px);
     }
 }
 .main-content__main-text-title-name { 
@@ -61,6 +76,11 @@
     @include tablets {
         font-size: rem(56px);
         text-align: center;
+        margin-left:0; 
+    }
+
+    @include mini-phones {
+        font-size: rem(40px);
     }
 }
 .main-content__main-text-desc {
@@ -79,5 +99,10 @@
         line-height: rem(40px);
         display: flex;
         justify-content: center;
+    }
+
+    @include mini-phones {
+        font-size: rem(30px);
+        margin-top: rem(0px);
     }
 }

@@ -8,7 +8,7 @@ $(".main").onepage_scroll ({
    afterMove: function(index) {},   
    loop: false,                     
    keyboard: true,                  
-   responsiveFallback: 600,                                                   
+   responsiveFallback: false,                                                   
    direction: "vertical"              
 });
 

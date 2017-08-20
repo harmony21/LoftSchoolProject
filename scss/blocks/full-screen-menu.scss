@@ -27,6 +27,10 @@
        margin-top: rem(50px);
    }
 
+   @include mini-phones {
+       margin-top: rem(15px);
+   }
+
 }
 .full-screen__menu-item {
     display: block;
@@ -40,6 +44,10 @@
             content: "\A\2022";
             color: $white;
     }
+    
+    @include mini-phones {
+        font-size: rem(16px);
+    }
 }
 .full-screen__menu-item:last-child::after {
     content: "";
@@ -47,4 +55,7 @@
 .full-screen__menu-link {
     text-decoration: none;
     color: $white;
+}
+.full-screen__menu-close {
+    cursor: pointer;
 }

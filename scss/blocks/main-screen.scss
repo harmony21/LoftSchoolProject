@@ -11,4 +11,11 @@
 }
 .main-screen__container {
     width: 98%;  
+
+    @include tablets {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }

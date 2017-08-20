@@ -16,17 +16,17 @@
     @include phones {
         width: rem(250px);
     }
+
+    @include mini-phones {
+         width: rem(200px);
+    }
 }
 .burger-left__composition {
     position: absolute;
-    top: -8%;
-    left: 10%;
+    top: -5vh;
+    left: 10vw;
     padding: rem(8px) rem(15px); 
     border-radius: rem(7px);
-    // margin-top: rem(-200px);
-    // margin-left: rem(150px);
-    // margin-left: 10%;
-    // margin-top: 
     background-color: #f08c33;
     text-align: center;
     &.active {
@@ -35,23 +35,18 @@
 
     @include tablets {
         top: 0;
-        left: 20%;
+        left: 17vw;
     }
 
     @include phones {
-        left: 10%;
-        // top: 8%;
-        // margin-left: rem(50px);
-        // margin-top: rem(-100px);
+        left: 11vw;
+        top: -1vh;
     }
 
     @include mini-phones {
-        // margin-left: rem(10px);
-        left: 5%;
-        top: 3%;
+        left: 2vw;
+        top: 0;
         padding: rem(5px) rem(10px); 
-        // margin-top: rem(-50px);
-        // margin-top: rem(-90px); 
     }
 }
 .burger-left__composition-link {
@@ -70,8 +65,8 @@
     background-color: $white;
     position: absolute;
     opacity: 0.95;
-    margin-left: rem(11px);
-    margin-top: rem(-57px);
+    left: 15.9vw;
+    top: -4.8vh;
     border-radius: rem(5px);
     display: flex;
     flex-wrap: wrap;
@@ -81,21 +76,24 @@
     display: none;
 
     @include tablets {
-    margin-top: rem(-26px);
-    margin-left: rem(9px);
+    left: 27.5vw;
+    top: 0;
     padding-right: 0;
     }
 
     @include phones {
-    margin-top: rem(14px);
-    margin-left: rem(37px);
+    width: rem(210px);
+    height: rem(312px);
+    left: 33vw;
+    top: -0.8vh;
+    padding-left: rem(15px);
     }
 
     @include mini-phones {
     width: rem(185px);
     height: rem(250px);
-    margin-top: rem(0px);
-    margin-left: rem(39px);
+    top: 0;
+    left: 23.5vw;
     padding-left: rem(15px);
     }
 }
@@ -132,6 +130,10 @@
     margin-right: rem(25px);
     display: flex;
 
+    @include phones {
+    width: rem(35px);
+    height: rem(35px);
+    }
     @include mini-phones {
     width: rem(30px);
     height: rem(30px);
@@ -164,6 +166,11 @@
         margin-left: rem(220px);
     }
 
+    @include phones {
+        margin-top: rem(-305px);
+        margin-left: rem(175px);
+    }
+
     @include mini-phones {
         margin-top: rem(-285px);
         margin-left: rem(155px);
@@ -172,34 +179,23 @@
 
 .burger-left__calories {
     position: absolute;
-    left: 11%;
-    bottom: -8%;
-    // margin-left: rem(170px);
-    // margin-top: rem(190px);
+    left: 11vw;
+    bottom: 0;
     opacity: 0.5;
 
     @include tablets {
-    // margin-left: rem(510px);
-    // margin-top: rem(-125px);
-        left: 70%;
-        top: 3%;
-
+        left: 70vw;
+        top: 1vh;
     }
 
     @include phones {
-        left: 75%;
-        top: 1%;
-        // margin: rem(10px); 
-        // margin-left: rem(320px); 
-        // margin-top: rem(-105px);
+        left: 70vw;
+        top: 0;
     }
 
     @include mini-phones {
-        left: 77%;
-        top: 3%;
-        // margin: rem(10px); 
-        // margin-left: rem(232px); 
-        // margin-top: rem(-88px);
+        left: 70vw;
+        top: 0;
     }
 }
 .burger-left__calories-title {

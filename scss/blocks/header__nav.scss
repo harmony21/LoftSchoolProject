@@ -1,7 +1,9 @@
 .header__nav {
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
     margin: 0;
-    margin-left:rem(214px);
+    width: 100%;
 
     @include tablets {
         display: none;

@@ -8,6 +8,12 @@
 }
 .advantages__container {
     width: 98%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
 }
 .adv-title {
     display: flex;
@@ -19,10 +25,16 @@
     font-size: rem(72px);
     font-weight: lighter;
     margin-top: rem(65px);
+    text-align: center;
 
     @include phones {
         font-size: rem(60px);
-        margin-top: rem(40px);
+        margin-top: rem(20px);
         text-align: center;
+    }
+
+    @include mini-phones {
+        font-size: rem(40px);
+        margin-top: rem(20px);
     }
 }

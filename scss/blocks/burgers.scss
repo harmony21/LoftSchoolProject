@@ -8,11 +8,19 @@
     justify-content: center;
     align-items: center; 
     flex-direction: column;
-    overflow-x: hidden;
     position: relative;
 }
 .burgers__container {
     width: 98%;
+    height: 100%;  
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    @include mini-phones {
+        width: 90%;
+        overflow: hidden;
+    }
 }
 .burgers__wrapper {
     width: 98%;

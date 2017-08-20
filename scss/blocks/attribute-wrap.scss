@@ -9,20 +9,20 @@
     }
 }
 .attribute-wrap__meat-svg {
-    background: url(..//icons/meat.svg) center center no-repeat;
-    width: rem(160px);
-    height: rem(100px);
-    margin-top:rem(5px);
-
     @include phones {
-        margin-top: 0;
-        padding: rem(30px);
+        display: flex;
+    }
+}
+.attribute-wrap__meat-svg > img {
+    @include mini-phones {
+        width: rem(60px);
     }
 }
 .attribute-wrap__meat-desc {
     @include phones {
         text-align: left;
         padding: 0 rem(10px);
+        margin-left: rem(20px);
     }
 }
 .attribute-wrap__meat-title {
@@ -36,6 +36,10 @@
     @include phones {
         font-size: rem(20px);
     }
+
+    @include mini-phones {
+        font-size: rem(16px);
+    }
  }
 .attribute-wrap__meat-article {
     @include attribute_class_article;
@@ -44,18 +48,27 @@
     @include tablets {
         font-size: rem(13px);
     }
+
+    @include mini-phones {
+        font-size: rem(11px);
+    }
 }
 
 .attribute-wrap__hand-made-svg {
-    background: url(..//icons/hand.svg) center center no-repeat;
-    width: rem(160px);
-    height: rem(100px);
-    margin-top: rem(5px);
-
     @include phones {
-        margin-left: rem(20px);
-        margin-top: rem(-15px); 
-        padding: rem(30px);
+        display: flex;
+        margin-left: rem(15px);
+    }
+
+    @include mini-phones {
+        margin-top: rem(-10px);
+        display: flex;
+        margin-left: rem(10px);
+    }
+}
+.attribute-wrap__hand-made-svg > img {
+    @include mini-phones {
+        width: rem(50px);
     }
 }
 .attribute-wrap__hand-made-desc {
@@ -63,6 +76,12 @@
         text-align: left;
         padding: 0 rem(10px);
         margin-top: rem(-30px); 
+        margin-left: rem(30px);
+    }
+
+    @include mini-phones {
+        margin-top: rem(-55px); 
+        margin-left: rem(20px);
     }
 }
 .attribute-wrap__hand-made-title {
@@ -76,6 +95,10 @@
      @include phones {
         font-size: rem(20px);
     }
+
+    @include mini-phones {
+        font-size: rem(16px);
+    }
 }
 .attribute-wrap__hand-made-article {
     @include attribute_class_article;
@@ -84,23 +107,40 @@
     @include tablets {
         font-size: rem(13px);
     }
+
+    @include mini-phones {
+        font-size: rem(11px);
+    }
 }
 
 .attribute-wrap__ingredients-svg {
-    background: url(..//icons/natural.svg) center center no-repeat;
-    width: rem(160px);
-    height: rem(100px);
-
     @include phones {
-        padding: rem(30px);
-        margin-top: rem(-30px);
+        display: flex;
+        margin-left: rem(10px);
+    }
+
+    @include mini-phones {
+        display: flex;
+        margin-top: rem(-50px);
+    }
+}
+.attribute-wrap__ingredients-svg > img {
+    @include mini-phones {
+        width: rem(60px);
     }
 }
 .attribute-wrap__ingredients-desc {
     @include phones {
         text-align: left;
         margin-top:rem(-40px);
-        margin-left:rem(-10px);
+        margin-left:rem(20px);
+        padding: 0 rem(10px);
+
+    }
+
+    @include mini-phones {
+        margin-top:rem(-60px);
+        margin-left: rem(10px);
     }
 }
 .attribute-wrap__ingredients-title {
@@ -115,6 +155,10 @@
     @include phones {
         font-size: rem(20px);
     }
+
+    @include mini-phones {
+        font-size: rem(16px);
+    }
 }
 .attribute-wrap__ingredients-article {
     @include attribute_class_article;
@@ -122,5 +166,9 @@
 
     @include tablets {
         font-size: rem(13px);
+    }
+
+    @include mini-phones {
+        font-size: rem(11px);
     }
 }

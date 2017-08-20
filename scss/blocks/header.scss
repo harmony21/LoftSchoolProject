@@ -1,14 +1,17 @@
 .header {
     height: rem(90px);
+    width: 80%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     @include tablets {
-        display: flex;
-        justify-content: space-between;
         padding: 0 rem(25px);
+        margin: 0;
     }
+
+
 } 
 .header__logo {
     display: flex;

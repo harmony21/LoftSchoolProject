@@ -13,13 +13,18 @@
     font-size: rem(72px);
     font-weight: lighter;
 
+    @include tablets {
+        margin-left: rem(100px); 
+    }
+
     @include phones {
-    margin-left: rem(50px);
+        margin-left: rem(15px);
+        font-size: rem(60px);
     }
 
     @include mini-phones {
-    font-size: rem(44px);
-    margin-left: rem(10px);
-    margin-top: rem(20px);
+        font-size: rem(44px);
+        margin-left: rem(10px);
+        margin-top: rem(20px);
     }
 }

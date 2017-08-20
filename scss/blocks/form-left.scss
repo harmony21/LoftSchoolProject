@@ -29,6 +29,10 @@
     @include phones {
         padding: rem(5px) 0;
     }
+
+    @include mini-phones {
+        margin-top: rem(-10px);
+    }
 }
 .form-left__house {
     display: flex;
@@ -38,6 +42,10 @@
     
     @include phones {
         padding: rem(5px) 0;
+    }
+
+    @include mini-phones {
+        margin-top: rem(-10px);
     }
 }
 .form-left__house-inform {

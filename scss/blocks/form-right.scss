@@ -13,11 +13,19 @@
     @include phones {
         padding: rem(5px) 0;
     }
+
+    @include mini-phones {
+        margin-top: rem(-10px);
+    }
 }
 textarea {
     margin: rem(10px);
     border-radius: rem(5px); 
     height: rem(120px);
+
+    @include mini-phones {
+        height: rem(50px);
+    }
 }
 .form-right__radio {
     padding: 0 rem(25px);
@@ -33,6 +41,10 @@ textarea {
     @include phones {
         justify-content: center;
     }
+
+    @include mini-phones {
+        margin-top: rem(-10px);
+    }
 }
 .form-right__checkbox {
     display: flex;
@@ -46,6 +58,10 @@ textarea {
     @include phones {
         justify-content: center;
     }
+
+    @include mini-phones {
+        margin-top: rem(-5px);
+    }
 }
 .form-right__buttons-form {
     padding: rem(5px) rem(25px);
@@ -53,6 +69,11 @@ textarea {
     @include phones {
         display: flex;
         justify-content: center;
+        align-items: center;
+    }
+
+    @include mini-phones {
+        margin-top: rem(-10px);
     }
 }
 input[type="submit"] {
@@ -67,6 +88,10 @@ input[type="submit"] {
     &:hover {
         background-color: #c1401e; 
         cursor: pointer;
+    }
+
+    @include phones {
+        height: rem(35px);
     }
 }
 input[type="reset"] {

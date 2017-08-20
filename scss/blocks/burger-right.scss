@@ -27,11 +27,13 @@
     }
 
     @include phones {
-         font-size: rem(50px);
+         font-size: rem(40px);
     }
 
     @include mini-phones {
-         font-size: rem(35px);  
+         font-size: rem(30px); 
+         margin-top: rem(-10px);
+         text-align: center;
     }
 }
 .burger-right__desc {
@@ -50,10 +52,11 @@
     @include phones {
         line-height: 1.7;
         margin: rem(20px) auto;
+        font-size: rem(12px);
     }
 
     @include mini-phones {
-        font-size: rem(13px);
+        font-size: rem(11px);
         line-height: 1.5;
     }
 }
@@ -70,7 +73,7 @@
     }
 
     @include mini-phones {
-        margin-bottom: rem(25px);
+        margin-top: rem(-10px);
     }
 }
 .burger-right__price-number {
