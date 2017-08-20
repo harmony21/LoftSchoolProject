@@ -12,6 +12,6 @@
         margin-top: rem(80px);
     }
     @include mini-phones {
-        margin-top: rem(10px);
+        margin-top: 10vh;
     }
 }
