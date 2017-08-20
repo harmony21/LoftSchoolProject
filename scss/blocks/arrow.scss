@@ -8,4 +8,8 @@
     cursor: pointer;
     position: absolute;
     bottom: 0;
+
+    @include mini-phones {
+        bottom: rem(50px);
+    }
 }

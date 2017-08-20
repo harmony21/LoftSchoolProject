@@ -39,3 +39,5 @@ $('.btn__link').click(function(e) {
     $(this).moveTo(7);
 });
 
+//navigation by full-screen menu items
+

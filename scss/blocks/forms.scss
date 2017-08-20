@@ -29,9 +29,9 @@
     }
 
     @include mini-phones {
-        width: 98%;
+        margin: auto;
         font-size: rem(30px);
-        margin-top: rem(15px);
+        margin-top: rem(-20px);
     }
 }
 label {

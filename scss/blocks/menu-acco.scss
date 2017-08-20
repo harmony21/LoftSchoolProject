@@ -55,27 +55,29 @@
     line-height: 1.8;
     margin: 0;
     display: none;
-    width: rem(545px); 
     min-height: 100vh;  
     background-color: $grey;
     opacity: 0.9;
 
+    @include desktop {
+        width: rem(545px); 
+    }
+
     @include tablets {
-        width: rem(572px); 
+        width: auto; 
     }
     
     @include phones {
-        width: rem(403px);
+        width: auto; 
         position: relative;
-        margin-right: rem(-120px);
         z-index: 5;
-        line-height: 1.6;
-        font-size: rem(13px);
-        padding: rem(45px) rem(30px);    
+        line-height: 1.5;
+        font-size: rem(12px);
+        padding: rem(60px) rem(30px);    
     }
 
     @include mini-phones {
-        width: rem(243px);
+        width: auto; 
         font-size: rem(12px);
         
     }
@@ -109,9 +111,13 @@
         margin-bottom: 160px;
     }
 
+    @include phones {
+        font-size: rem(28px);
+        font-weight: lighter;
+    }
+
     @include mini-phones {
         font-size: rem(24px);
-        font-weight: lighter;
         margin-bottom: 180px;
     }
 }

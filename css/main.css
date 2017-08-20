@@ -330,6 +330,9 @@
   cursor: pointer;
   position: absolute;
   bottom: 0; }
+  @media screen and (max-width: 20rem) {
+    .arrow {
+      bottom: 3.125rem; } }
 
 .full-screen {
   display: none; }
@@ -756,7 +759,7 @@
       margin-top: 5rem; } }
   @media screen and (max-width: 20rem) {
     .burger-content {
-      margin-top: 1.875rem; } }
+      margin-top: 0rem; } }
 
 .burger-left {
   display: -webkit-box;
@@ -946,8 +949,8 @@
       margin-left: 10.9375rem; } }
   @media screen and (max-width: 20rem) {
     .burger-left__composition-close {
-      margin-top: -17.8125rem;
-      margin-left: 9.6875rem; } }
+      margin-top: -17.6875rem;
+      margin-left: 9.375rem; } }
 
 .burger-left__calories {
   position: absolute;
@@ -1253,7 +1256,8 @@ text {
       font-size: 1.125rem; } }
 
 .team-acco__item {
-  margin: 1.5625rem; }
+  margin: 1.5625rem;
+  width: 100%; }
   .team-acco__item:hover {
     cursor: pointer; }
   .team-acco__item.active .team-acco__content {
@@ -1463,25 +1467,26 @@ text {
   line-height: 1.8;
   margin: 0;
   display: none;
-  width: 34.0625rem;
   min-height: 100vh;
   background-color: #585858;
   opacity: 0.9; }
+  @media screen and (max-width: 93.75rem) {
+    .menu-acco__desc {
+      width: 34.0625rem; } }
   @media screen and (max-width: 48rem) {
     .menu-acco__desc {
-      width: 35.75rem; } }
+      width: auto; } }
   @media screen and (max-width: 30rem) {
     .menu-acco__desc {
-      width: 25.1875rem;
+      width: auto;
       position: relative;
-      margin-right: -7.5rem;
       z-index: 5;
-      line-height: 1.6;
-      font-size: 0.8125rem;
-      padding: 2.8125rem 1.875rem; } }
+      line-height: 1.5;
+      font-size: 0.75rem;
+      padding: 3.75rem 1.875rem; } }
   @media screen and (max-width: 20rem) {
     .menu-acco__desc {
-      width: 15.1875rem;
+      width: auto;
       font-size: 0.75rem; } }
 
 .menu-acco__close {
@@ -1514,10 +1519,13 @@ text {
     .menu-acco__link {
       font-size: 2.1875rem;
       margin-bottom: 160px; } }
+  @media screen and (max-width: 30rem) {
+    .menu-acco__link {
+      font-size: 1.75rem;
+      font-weight: lighter; } }
   @media screen and (max-width: 20rem) {
     .menu-acco__link {
       font-size: 1.5rem;
-      font-weight: lighter;
       margin-bottom: 180px; } }
 
 .reviews {
@@ -1708,9 +1716,9 @@ text {
       margin-top: 1.25rem; } }
   @media screen and (max-width: 20rem) {
     .form__title {
-      width: 98%;
+      margin: auto;
       font-size: 1.875rem;
-      margin-top: 0.9375rem; } }
+      margin-top: -1.25rem; } }
 
 label {
   font-family: Ubuntu-Light;
@@ -1760,7 +1768,7 @@ input {
       margin-bottom: 0.625rem; } }
   @media screen and (max-width: 20rem) {
     #form-feedback {
-      margin-top: -2.8125rem; } }
+      margin-top: -1.875rem; } }
 
 .form-left {
   width: 50%; }
@@ -2032,7 +2040,7 @@ input[type="reset"] {
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
-      height: 7.1875rem; } }
+      height: 20vh; } }
 
 .contact-inform {
   display: -webkit-box;

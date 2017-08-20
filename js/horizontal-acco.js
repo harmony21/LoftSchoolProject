@@ -1,17 +1,3 @@
-// $(document).ready(function() {
-//     $('.menu-acco__item').click(function(e) {
-//         $(this).toggleClass('active');
-//         $(this).next('.menu-acco__desc').slideUp(600);
-
-//         $('.menu-acco__close').click(function(e) {
-//         e.preventDefault();
-//         $('.menu-acco__desc').fadeOut();
-//         $('.menu-acco__desc').closest('.menu-acco__item').removeClass('active');
-//     });  
-//     });  
-    
-// });
-
 $(document).ready(function() {
     $('.menu-acco__item').on('click', function (e) {
         e.preventDefault()
@@ -19,9 +5,14 @@ $(document).ready(function() {
         var elem = $(e.target);
         item = elem.closest('.menu-acco__item'),
         content = item.find('.menu-acco__context'),
-        reqWidth = item.find('.menu-acco__desc').outerWidth(),
+        desWidth = item.find('.menu-acco__desc').outerWidth(),
         items = item.siblings(),
         otherContent = items.find('.content-menu');
+
+        $(window).width();
+        $('.menu-acco__item').width();
+        var itemsLength = $('.menu-acco__item').width() * $('.menu-acco__item').length;
+        var mobWidth = $(window).width() - itemsLength;
 
         if (!item.hasClass('active')) {
             items.removeClass('active');
@@ -31,16 +22,35 @@ $(document).ready(function() {
                 'width' : 0
             });
 
-            content.css ({
-                'width' : reqWidth
-            })
+            if ($(window).width() < 769) {
+                content.css ({
+                    'width' : mobWidth
+                });
+                content.show(300);
+
+            } else {
+                content.css ({
+                    'width' : desWidth
+                });
+                content.show(300);
+            };
+            
         } else {
-            item.removeClass('active')
+            item.removeClass('active');
+            content.hide(400);
             content.css ({
                 'width' : 0
+            });
+        };
+
+        if ($(window).width() < 481) {
+            $('.menu-acco__close').on('click', function(ev) {
+                var mobileItem = $(ev.target);
+                elem.removeClass('active');
+                mobileItem.closest('.menu-acco__context').hide(400);
             })
         }
-    })
+    });
 });
 
         
