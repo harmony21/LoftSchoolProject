@@ -45,7 +45,7 @@
 
     @include mini-phones {
         left: 2vw;
-        top: 8vh;
+        top: 11vh;
         padding: rem(5px) rem(10px); 
     }
 }
@@ -92,7 +92,7 @@
     @include mini-phones {
     width: rem(185px);
     height: rem(250px);
-    top: 8vh;
+    top: 11vh;
     left: 23.5vw;
     padding-left: rem(15px);
     }
@@ -195,7 +195,7 @@
 
     @include mini-phones {
         left: 70vw;
-        top: 8vh;
+        top: 11vh;
     }
 }
 .burger-left__calories-title {
