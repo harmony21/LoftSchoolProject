@@ -761,7 +761,7 @@
       margin-top: 5rem; } }
   @media screen and (max-width: 20rem) {
     .burger-content {
-      margin-top: 17vh; } }
+      margin-top: 19vh; } }
 
 .burger-left {
   display: -webkit-box;
@@ -814,7 +814,7 @@
   @media screen and (max-width: 20rem) {
     .burger-left__composition {
       left: 2vw;
-      top: 11vh;
+      top: 13vh;
       padding: 0.3125rem 0.625rem; } }
 
 .burger-left__composition-link {
@@ -866,7 +866,7 @@
     .burger-left__composition-wrap {
       width: 11.5625rem;
       height: 15.625rem;
-      top: 11vh;
+      top: 13vh;
       left: 23.5vw;
       padding-left: 0.9375rem; } }
 
@@ -956,7 +956,7 @@
 
 .burger-left__calories {
   position: absolute;
-  left: 11vw;
+  left: 13vw;
   bottom: 0;
   opacity: 0.5; }
   @media screen and (max-width: 48rem) {
@@ -970,7 +970,7 @@
   @media screen and (max-width: 20rem) {
     .burger-left__calories {
       left: 70vw;
-      top: 11vh; } }
+      top: 13vh; } }
 
 .burger-left__calories-title {
   color: #fff;
