@@ -8,9 +8,10 @@
 }
 .centered {
     display: flex;
+    width: 98%;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: center;
-    width: 98%;
 }
 .team__content {
     background: url(..//img/back-info.png);

@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    // margin-top: rem(-180px);
 
     @include tablets {
         margin-top: 0;
@@ -16,7 +15,6 @@
     font-size: rem(18px);
     font-weight: lighter;
     color: $white;
-    // margin-left: rem(25px);
     display: flex;
     align-items: center;
     &:before {
@@ -63,7 +61,7 @@
     }
 
     @include mini-phones {
-        margin: rem(10px);
+        margin: rem(7px);
     }
 }
 .team-acco__content {
