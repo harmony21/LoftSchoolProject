@@ -761,7 +761,7 @@
       margin-top: 5rem; } }
   @media screen and (max-width: 20rem) {
     .burger-content {
-      margin-top: 0rem; } }
+      margin-top: 2.5rem; } }
 
 .burger-left {
   display: -webkit-box;
@@ -1148,7 +1148,6 @@ text {
   display: -ms-flexbox;
   display: flex;
   width: 98%;
-  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1529,7 +1528,7 @@ text {
   @media screen and (max-width: 20rem) {
     .menu-acco__link {
       font-size: 1.5rem;
-      margin-bottom: 220px; } }
+      margin-bottom: 15.625rem; } }
 
 .reviews {
   background-size: 100% 100%;
@@ -1720,7 +1719,8 @@ text {
   @media screen and (max-width: 20rem) {
     .form__title {
       margin: auto;
-      font-size: 1.875rem; } }
+      font-size: 1.875rem;
+      margin-top: -1.875rem; } }
 
 label {
   font-family: Ubuntu-Light;
