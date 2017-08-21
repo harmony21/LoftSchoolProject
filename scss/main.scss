@@ -1,8 +1,11 @@
 // resolutions 
 $desktop: rem(1500px);
 $laptop: rem(992px);
+$min-laptop: rem(915px);
 $tablets: rem(768px);
-$phones: rem(480px);
+$min-tablets: rem(625px);
+$phones: rem(500px);
+$min-phones: rem(405px);
 $mini-phones: rem(320px);
 
 //configuration

@@ -5,7 +5,7 @@
     margin: 0;
     width: 100%;
 
-    @include tablets {
+    @include min-laptop {
         display: none;
     }
 }

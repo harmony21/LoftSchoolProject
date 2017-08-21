@@ -2,24 +2,36 @@
     @return $px / 16px + 0rem;
 }
 
-@mixin desktop {
-    @media screen and (max-width: $desktop) {
+@mixin laptop {
+    @media screen and (max-width: $laptop) {
         @content;
     }
 }
-
+@mixin min-laptop {
+    @media screen and (max-width: $min-laptop) {
+        @content;
+    }
+}
 @mixin tablets {
     @media screen and (max-width: $tablets) {
         @content;
     }
 }
-
+@mixin min-tablets {
+    @media screen and (max-width: $min-tablets) {
+        @content;
+    }
+}
 @mixin phones {
     @media screen and (max-width: $phones) {
         @content;
     }
 }
-
+@mixin min-phones {
+    @media screen and (max-width: $min-phones) {
+        @content;
+    }
+}
 @mixin mini-phones {
     @media screen and (max-width: $mini-phones) {
         @content;

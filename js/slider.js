@@ -3,7 +3,7 @@ $(document).ready(function(){
 });
 
 var slider = $('.bxslider').bxSlider({
-  mode: 'horizontal'
+    mode: 'horizontal'
 });
 
 $('.arrow-right').click(function(){
@@ -13,6 +13,5 @@ $('.arrow-right').click(function(){
 $('.arrow-left').click(function(){
   slider.goToPrevSlide();
 });
-
 
 

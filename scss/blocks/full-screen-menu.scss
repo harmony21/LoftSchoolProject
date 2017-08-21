@@ -1,7 +1,7 @@
 .full-screen {
     display: none;
 
-    @include tablets {
+    @include min-laptop {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -13,14 +13,14 @@
     }
 }
 .full-screen__head {
-    @include tablets {
+    @include min-laptop {
     display: flex;
     justify-content: space-between;
     padding: rem(10px) rem(42px) 0 rem(32px);
     }
 }
 .full-screen__menu {
-   @include tablets {
+   @include min-laptop {
        list-style: none;
        display: flex;
        flex-direction: column;

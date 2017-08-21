@@ -5,15 +5,13 @@ $(document).ready(function() {
         var elem = $(e.target);
         item = elem.closest('.menu-acco__item'),
         content = item.find('.menu-acco__context'),
-        desWidth = item.find('.menu-acco__desc').outerWidth(),
+        desWidth = item.find('.menu-acco').outerWidth(),
         items = item.siblings(),
-        otherContent = items.find('.content-menu');
-
-        $(window).width();
-        $('.menu-acco__item').width();
-        var itemsLength = $('.menu-acco__item').width() * $('.menu-acco__item').length;
-        var mobWidth = $(window).width() - itemsLength;
-
+        otherContent = items.find('.content-menu'),
+        mobWidth = item.find('.menu-acco');
+      
+        var maxWidth = $(window).width();
+        
         if (!item.hasClass('active')) {
             items.removeClass('active');
             item.addClass('active');
@@ -23,12 +21,12 @@ $(document).ready(function() {
             });
 
             if ($(window).width() < 769) {
-                content.css ({
-                    'width' : mobWidth
-                });
+                mobWidth.css ({
+                    'max-width' : maxWidth
+                })
                 content.show(300);
-
-            } else {
+            }
+            else {
                 content.css ({
                     'width' : desWidth
                 });

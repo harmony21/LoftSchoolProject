@@ -13,7 +13,7 @@ function init(){
         balloonContent: '<div class="mapmap">Text</div>'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '..//img/i-map_marker.png',
+        iconImageHref: 'img/i-map_marker.png',
         iconImageSize: [46, 57]
     });
 
@@ -21,7 +21,7 @@ function init(){
         hintContent: 'Бургеры'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '..//img/i-map_marker.png',
+        iconImageHref: 'img/i-map_marker.png',
         iconImageSize: [46, 57]
     });
 
@@ -29,7 +29,7 @@ function init(){
         hintContent: 'Бургеры'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '..//img/i-map_marker.png',
+        iconImageHref: 'img/i-map_marker.png',
         iconImageSize: [46, 57]
     });
 
@@ -37,7 +37,7 @@ function init(){
         hintContent: 'Бургеры'
     }, {
         iconLayout: 'default#image',
-        iconImageHref: '..//img/i-map_marker.png',
+        iconImageHref: 'img/i-map_marker.png',
         iconImageSize: [46, 57]
     });
 

@@ -12,7 +12,7 @@
     right: rem(135px);
     top: 15%;
 
-    @include tablets {
+    @include min-laptop {
         display: none;
     }
 }

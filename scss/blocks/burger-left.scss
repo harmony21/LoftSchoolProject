@@ -9,7 +9,11 @@
     }
 }
 .burger-left__pic {
-    @include tablets {
+    @include laptop {
+        width: rem(460px);
+    }
+
+    @include min-laptop {
         width: rem(350px);
     }
 
@@ -23,8 +27,8 @@
 }
 .burger-left__composition {
     position: absolute;
-    top: -5vh;
-    left: 10vw;
+    top: -30px;
+    left: 140px;
     padding: rem(8px) rem(15px); 
     border-radius: rem(7px);
     background-color: #f08c33;
@@ -33,19 +37,23 @@
         background-color: $orange;
     }
 
+    @include laptop {
+        top: 100px;
+    }
+
     @include tablets {
         top: 0;
-        left: 17vw;
+        left: 120px;
     }
 
     @include phones {
-        left: 11vw;
-        top: -1vh;
+        left: 55px;
+        top: -10px;
     }
 
     @include mini-phones {
-        left: 2vw;
-        top: 18vh;
+        left: 7px;
+        top: 90px;
         padding: rem(5px) rem(10px); 
     }
 }
@@ -65,8 +73,8 @@
     background-color: $white;
     position: absolute;
     opacity: 0.95;
-    left: 15.9vw;
-    top: -4.8vh;
+    left: 220px;
+    top: -30px;
     border-radius: rem(5px);
     display: flex;
     flex-wrap: wrap;
@@ -75,8 +83,12 @@
     z-index: 10;
     display: none;
 
+    @include laptop {
+        top: 100px;
+    }
+
     @include tablets {
-    left: 27.5vw;
+    left: 200px;
     top: 0;
     padding-right: 0;
     }
@@ -84,16 +96,16 @@
     @include phones {
     width: rem(210px);
     height: rem(312px);
-    left: 33vw;
-    top: -0.8vh;
+    left: 135px;
+    top: -10px;
     padding-left: rem(15px);
     }
 
     @include mini-phones {
     width: rem(185px);
     height: rem(250px);
-    top: 18vh;
-    left: 23.5vw;
+    top: 90px;
+    left: 76px;
     padding-left: rem(15px);
     }
 }
@@ -129,7 +141,7 @@
     height: rem(40px);
     margin-right: rem(25px);
     display: flex;
-
+    
     @include phones {
     width: rem(35px);
     height: rem(35px);
@@ -179,23 +191,35 @@
 
 .burger-left__calories {
     position: absolute;
-    left: 13vw;
+    left: 150px;
     bottom: 0;
     opacity: 0.5;
 
+    @include laptop {
+        bottom: 100px;
+    }
+
     @include tablets {
-        left: 70vw;
-        top: 1vh;
+        left: 540px;
+        top: 5px;
+    }
+
+    @include min-tablets {
+        left: 430px;
     }
 
     @include phones {
-        left: 70vw;
+        left: 340px;
         top: 0;
     }
 
+    @include min-phones {
+        left: 260px;
+        top: 0;
+    }
     @include mini-phones {
-        left: 70vw;
-        top: 18vh;
+        left: 230px;
+        top: 85px;
     }
 }
 .burger-left__calories-title {

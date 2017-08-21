@@ -20,6 +20,9 @@
     font-weight: lighter;
     margin: 0;
 
+    @include min-laptop {
+        font-size: rem(56px);
+    }
     @include tablets {
         margin: auto;
         font-size: rem(56px);

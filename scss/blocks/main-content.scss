@@ -4,7 +4,7 @@
     align-items: center;
     height: 70%;
 
-    @include tablets {
+    @include min-laptop {
         flex-direction: column;
         height: 60%;
     }
@@ -12,9 +12,12 @@
 .main-content__burger-pic {
     display: flex;
 
-    @include tablets {
+    @include min-laptop {
         width: rem(320px);
     }
+    // @include tablets {
+    //     width: rem(320px);
+    // }
 
     @include mini-phones {
         width: rem(200px);
@@ -26,19 +29,19 @@
     margin-top: rem(60px);
     margin-left: rem(-35px);
 
-    @include tablets {
+    @include min-laptop {
         display: none;
     }
 }
 .main-content__burger-pic-burgerimg {
     position: relative;
 
-    @include tablets {
+    @include min-laptop {
         width: rem(320px);
         position: absolute;
         margin: 0;
         margin: auto;
-        margin-top: rem(-50px);
+        margin-top: rem(-100px);
     }
 
     @include phones {
@@ -58,6 +61,9 @@
     align-items: center;
     margin-top:rem(40px); 
     
+    @include min-laptop {
+        margin-top: rem(350px);
+    }
     @include tablets {
         margin-top: rem(250px);
     }
@@ -73,10 +79,10 @@
     margin-left:rem(15px); 
     font-weight: lighter;
 
-    @include tablets {
+    @include min-laptop {
         font-size: rem(56px);
         text-align: center;
-        margin-left:0; 
+        margin-left:0;
     }
 
     @include mini-phones {
@@ -93,10 +99,13 @@
     line-height: rem(60px);
     letter-spacing: rem(-2px);
 
-    @include tablets {
+    @include min-laptop {
         font-size: rem(40px);
         text-align: center;
         line-height: rem(40px);
+    }
+
+    @include tablets {
         display: flex;
         justify-content: center;
     }
