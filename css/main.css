@@ -1403,8 +1403,7 @@ text {
   min-height: 100vh;
   background-image: url(../img/burger-menu.png);
   background-size: cover;
-  position: relative;
-  overflow-x: hidden; }
+  position: relative; }
 
 .menu__title {
   margin-top: 5rem;
@@ -1468,7 +1467,7 @@ text {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 100vh; }
+  height: 100vh; }
   .menu-acco__title:hover {
     cursor: pointer; }
   @media screen and (max-width: 48rem) {
@@ -1510,7 +1509,6 @@ text {
   color: #fff;
   line-height: 1.8;
   margin: 0;
-  display: none;
   min-height: 100vh;
   background-color: #585858;
   opacity: 0.9; }
