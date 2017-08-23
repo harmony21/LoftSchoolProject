@@ -4,48 +4,36 @@ $(document).ready(function() {
 
         var elem = $(e.target);
         item = elem.closest('.menu-acco__item'),
-        content = item.find('.menu-acco__context'),
-        desWidth = item.find('.menu-acco').outerWidth(),
+        content = item.find('.menu-acco__wrap'),
         items = item.siblings(),
-        otherContent = items.find('.content-menu'),
-        mobWidth = item.find('.menu-acco');
-      
-        var maxWidth = $(window).width();
-        
-        if (!item.hasClass('active')) {
-            items.removeClass('active');
-            item.addClass('active');
+        otherContent = items.find('.menu-acco__wrap'),
+        maxWidth = $('.menu-acco__item').length * $('.menu-acco__title').width(),
 
-            otherContent.css ({
-                'width' : 0
-            });
+        mobWidth = $(window).width() - maxWidth,
+        desWidth = $(window).width()*0.53 - maxWidth;
+
+        if (!item.hasClass('active')) {
+            items.removeClass('active'),
+            item.addClass('active'),
+            otherContent.css ('width', 0);
 
             if ($(window).width() < 769) {
-                mobWidth.css ({
-                    'max-width' : maxWidth
-                })
-                content.show(300);
+                content.css ('width', mobWidth)
             }
             else {
-                content.css ({
-                    'width' : desWidth
-                });
-                content.show(300);
-            };
+                content.css ('width', desWidth)
+            } 
             
         } else {
             item.removeClass('active');
-            content.hide(400);
-            content.css ({
-                'width' : 0
-            });
+            content.css ('width', 0)
         };
 
         if ($(window).width() < 481) {
             $('.menu-acco__close').on('click', function(ev) {
                 var mobileItem = $(ev.target);
                 elem.removeClass('active');
-                mobileItem.closest('.menu-acco__context').hide(400);
+                mobileItem.closest('.menu-acco__wrap').css ('width', 0);
             })
         }
     });

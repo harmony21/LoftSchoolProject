@@ -5,8 +5,9 @@ $(document).ready(function() {
         var element = $(ev.target),
         verItem = element.closest('.team-acco__item'),
         verItems = verItem.siblings(),
-        verContent = verItem.find('.team-acco__content'), 
-        verContents = verItems.find('.team-acco__content');
+        verContent = verItem.find('.team-acco__wrap'), 
+        verContents = verItems.find('.team-acco__wrap'),
+        maxHeight = verItem.find('.team-acco__content').outerHeight(true);
 
         if (!verItem.hasClass('active')) {
             verItems.removeClass('active');
@@ -17,7 +18,7 @@ $(document).ready(function() {
             });
 
             verContent.css ({
-                'height' : 'auto'
+                'height' : maxHeight
             });
 
         } else {
@@ -30,3 +31,8 @@ $(document).ready(function() {
 
     })
 })
+
+
+
+
+

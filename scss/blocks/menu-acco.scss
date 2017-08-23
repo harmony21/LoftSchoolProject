@@ -47,6 +47,11 @@
 		background-size: cover;
 	}
 }
+.menu-acco__wrap {
+    transition:.5s;
+    width: 0;
+    overflow: hidden;
+}
  .menu-acco__desc {
     box-sizing: border-box;
     padding: rem(60px) rem(35px);

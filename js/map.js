@@ -1,6 +1,30 @@
 ymaps.ready(init);
 var myMap,
-    myPlacemark;
+    myPlacemark,
+    myPlacemarks = [{ 
+        latitude: 59.97496989, 
+        longitude: 30.31149391,
+        hintContent: 'Бургеры',
+        balloonContent: '<div class="map__marker">Text</div>'
+    },
+    { 
+        latitude: 59.95125142,
+        longitude: 30.38728882,
+        hintContent: 'Бургеры',
+        balloonContent: '<div class="map__marker">Text</div>'
+    },
+    { 
+        latitude: 59.91644773,
+        longitude: 30.49371887,
+        hintContent: 'Бургеры',
+        balloonContent: '<div class="map__marker">Text</div>'
+    },
+    { 
+        latitude: 59.88850937,
+        longitude: 30.31725097,
+        hintContent: 'Бургеры',
+        balloonContent: '<div class="map__marker">Text</div>'
+    }];
 
 function init(){
     myMap = new ymaps.Map("map", {
@@ -8,43 +32,18 @@ function init(){
         zoom: 12
     });
 
-    myPlacemark = new ymaps.Placemark([59.97496989, 30.31149391], {
-        hintContent: 'Бургеры',
-        balloonContent: '<div class="mapmap">Text</div>'
-    }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/i-map_marker.png',
-        iconImageSize: [46, 57]
-    });
+        myPlacemarks.forEach(function(obj) { 
+            myPlacemark = new ymaps.Placemark([obj.latitude, obj.longitude], { 
+            hintContent: obj.hintContent,  
+            hintContent: obj.balloonContent
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/i-map_marker.png',
+            iconImageSize: [46, 57]
+            });
 
-    myPlacemark2 = new ymaps.Placemark([59.95125142, 30.38728882], {
-        hintContent: 'Бургеры'
-    }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/i-map_marker.png',
-        iconImageSize: [46, 57]
-    });
-
-    myPlacemark3 = new ymaps.Placemark([59.91644773, 30.49371887], {
-        hintContent: 'Бургеры'
-    }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/i-map_marker.png',
-        iconImageSize: [46, 57]
-    });
-
-    myPlacemark4 = new ymaps.Placemark([59.88850937, 30.31725097], {
-        hintContent: 'Бургеры'
-    }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'img/i-map_marker.png',
-        iconImageSize: [46, 57]
-    });
+            myMap.geoObjects.add(myPlacemark);
+        });
 
     myMap.behaviors.disable('scrollZoom');
-
-    myMap.geoObjects.add(myPlacemark);
-    myMap.geoObjects.add(myPlacemark2);
-    myMap.geoObjects.add(myPlacemark3);
-    myMap.geoObjects.add(myPlacemark4);
 }

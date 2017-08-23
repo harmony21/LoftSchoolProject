@@ -132,8 +132,7 @@
   display: inline-block;
   margin-top: -0.3125rem; }
   .nav__link:hover {
-    text-decoration: underline;
-    color: #fff; }
+    text-decoration: underline; }
 
 .btn {
   margin-bottom: 0.25rem;
@@ -1257,6 +1256,8 @@ text {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+  .team-acco__title:hover {
+    text-shadow: 2px 2px 10px black; }
   .team-acco__title:before {
     content: "";
     width: 0;
@@ -1265,7 +1266,10 @@ text {
     border-top-color: #f9b43b;
     border-bottom: none;
     margin-right: 0.9375rem;
-    margin-left: 1.25rem; }
+    margin-left: 1.25rem;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s; }
     @media screen and (max-width: 48rem) {
       .team-acco__title:before {
         margin-left: 0; } }
@@ -1290,8 +1294,6 @@ text {
   width: 100%; }
   .team-acco__item:hover {
     cursor: pointer; }
-  .team-acco__item.active .team-acco__content {
-    height: auto; }
   .team-acco__item.active .team-acco__title {
     color: #f9b43b; }
     .team-acco__item.active .team-acco__title:before {
@@ -1302,13 +1304,18 @@ text {
     .team-acco__item {
       margin: 0.4375rem; } }
 
+.team-acco__wrap {
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  overflow: hidden;
+  height: 0; }
+
 .team-acco__content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  height: 0; }
+  display: flex; }
   @media screen and (max-width: 48rem) {
     .team-acco__content {
       -webkit-box-orient: vertical;
@@ -1390,8 +1397,7 @@ text {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  height: 100%; }
+  transform: translate(-50%, -50%); }
 
 .menu {
   min-height: 100vh;
@@ -1487,6 +1493,13 @@ text {
 .menu-acco__title_diet {
   background-image: url(../img/menu-diet.png);
   background-size: cover; }
+
+.menu-acco__wrap {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  width: 0;
+  overflow: hidden; }
 
 .menu-acco__desc {
   -webkit-box-sizing: border-box;
@@ -1613,7 +1626,10 @@ text {
       justify-content: center; } }
 
 .photo-back:hover .review-style {
-  opacity: 1; }
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .review-style__name {
   font-family: Gagalin-Regular;
