@@ -28,6 +28,6 @@
     }).fail(function(jqXHR, textStatus) {
             alert("Request failed: " + textStatus);
         });
-}
+    }
 
 $('#form-feedback').on('submit', submitForm);
